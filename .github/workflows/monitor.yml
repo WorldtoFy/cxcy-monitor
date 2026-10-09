@@ -1,0 +1,47 @@
+name: 竞赛监控与提醒
+
+on:
+  schedule:
+    # 每 6 小时跑一次（UTC）。北京时间 = UTC+8
+    # 01:00 / 07:00 / 13:00 / 19:00 UTC  →  09:00 / 15:00 / 21:00 / 次日03:00 北京时间
+    - cron: "0 1,7,13,19 * * *"
+  workflow_dispatch:      # 支持在 Actions 页面手动触发
+
+# 需要写回状态文件，故申请写权限
+permissions:
+  contents: write
+
+concurrency:
+  group: cxcy-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 安装依赖
+        run: pip install requests urllib3
+
+      - name: 抓取并推送提醒
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_SERVER: ${{ vars.NTFY_SERVER }}
+        run: python -m cxcy.main
+
+      - name: 提交状态变更
+        run: |
+          git config user.name  "cxcy-bot"
+          git config user.email "cxcy-bot@users.noreply.github.com"
+          git add -A data
+          if git diff --staged --quiet; then
+            echo "状态无变化"
+          else
+            git commit -m "chore: 更新监控状态 [skip ci]"
+            git push
+          fi

@@ -1,0 +1,48 @@
+name: 部署监控台网页
+
+on:
+  push:
+    branches: [main]
+    paths: ["data/comps.json", "web/**", "index.html", ".github/workflows/pages.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 组装站点
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp -r web _site/web
+          mkdir -p _site/data
+          cp data/comps.json _site/data/
+
+      - uses: actions/configure-pages@v5
+        with:
+          # 自动开启 Pages（否则首次部署会因 Pages 未启用而失败）
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,9 @@
+# 统一换行符，避免 Windows 开发 / Linux CI 之间反复产生无意义 diff
+* text=auto eol=lf
+
+# 二进制文件不做换行处理
+*.png binary
+*.jpg binary
+*.zip binary
+*.xlsx binary
+*.pdf binary

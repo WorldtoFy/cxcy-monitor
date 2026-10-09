@@ -1,0 +1,15 @@
+{
+  "_说明": "竞赛监控配置。改动后下次定时任务（或手动触发）生效。",
+  "_watch_competitions": [
+    "留空数组 = 监测全部竞赛的获奖公示（推荐先这样）",
+    "填入竞赛 id 则只监测这些竞赛；id 在详情页网址 comId= 后面",
+    "例如：\"7eb50f75710051c1dd9447dddf3bcede\" 是全国大学生广告艺术大赛（辽宁赛区）"
+  ],
+  "watch_competitions": [],
+  "_award_notify": "是否推送获奖公示提醒。true=推，false=只记录不推送",
+  "award_notify": true,
+  "_award_cap": "单轮最多推几条公示，防止涌出",
+  "award_cap": 3,
+  "_award_pages": "每次扫描最近几页公告（每页 100 条）",
+  "award_pages": 4
+}

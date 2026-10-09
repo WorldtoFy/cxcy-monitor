@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1a7f37">
+<title>竞赛监控台</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="bar-in">
+    <h1>🏆 竞赛监控台</h1>
+    <div class="sub" id="meta">加载中…</div>
+  </div>
+</header>
+
+<div class="kpis" id="kpis"></div>
+
+<div class="tools">
+  <input id="q" type="search" placeholder="搜索竞赛名称…" autocomplete="off">
+  <label class="chk"><input type="checkbox" id="hideExpired" checked> 隐藏已截止</label>
+</div>
+
+<main id="list"></main>
+
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-mask" data-close></div>
+  <div class="sheet-body">
+    <div class="sheet-head">
+      <div class="sheet-title" id="s-title"></div>
+      <button class="x" data-close aria-label="关闭">✕</button>
+    </div>
+    <div class="sheet-meta" id="s-meta"></div>
+    <div class="sheet-acts" id="s-acts"></div>
+    <div class="sheet-content" id="s-detail"></div>
+  </div>
+</div>
+
+<footer class="foot">
+  数据源：辽宁省大学生创新创业管理共享平台 ·
+  <a href="https://cxcy.upln.cn/match" target="_blank" rel="noopener">官方网站</a><br>
+  提醒通过 ntfy 推送，无需打开本页
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
