@@ -1,0 +1,34 @@
+name: 网络诊断（临时）
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: DNS 解析测试
+        run: |
+          echo "=== 解析 cxcy.upln.cn ==="
+          getent hosts cxcy.upln.cn || echo "getent 失败"
+          nslookup cxcy.upln.cn || echo "nslookup 失败"
+          echo "=== 解析 ntfy.sh（对照）==="
+          getent hosts ntfy.sh || echo "ntfy 解析失败"
+
+      - name: HTTP 连通性测试
+        run: |
+          echo "=== cxcy.upln.cn ==="
+          curl -sS -m 30 -o /dev/null -w "HTTP %{http_code} | 耗时 %{time_total}s\n" \
+            "https://cxcy.upln.cn/provincial/match/competition/queryOngoing?year=2026&code=1&pageNo=1&pageSize=1" \
+            || echo "curl 失败（退出码 $?）"
+          echo "=== 用 IP 直连测试（绕过 DNS）==="
+          curl -sS -m 30 -k -o /dev/null -w "HTTP %{http_code}\n" \
+            --resolve cxcy.upln.cn:443:$(getent hosts cxcy.upln.cn | awk '{print $1}' | head -1) \
+            "https://cxcy.upln.cn/" 2>&1 | head -3 || echo "IP 直连失败"
+          echo "=== ntfy.sh（对照，应成功）==="
+          curl -sS -m 20 -o /dev/null -w "HTTP %{http_code}\n" "https://ntfy.sh/" || echo "ntfy 失败"
+
+      - name: 结论
+        run: |
+          echo "如果 cxcy 全部失败而 ntfy 成功，说明该平台只对国内网络开放，"
+          echo "GitHub Actions 无法承担采集任务，需要改用本机定时任务。"
