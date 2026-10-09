@@ -1,0 +1,39 @@
+name: 网络诊断2（DNS 绕过可行性）
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diag2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 测试硬编码 IP 能否连通（绕过 DNS）
+        run: |
+          IP=61.161.225.202
+          echo "=== 1) 原始 IP 的 TCP 连通性 ==="
+          timeout 15 bash -c "cat < /dev/null > /dev/tcp/$IP/443" && echo "TCP 443 可连" || echo "TCP 443 不可连"
+          timeout 15 bash -c "cat < /dev/null > /dev/tcp/$IP/80" && echo "TCP 80 可连" || echo "TCP 80 不可连"
+
+          echo "=== 2) 用公共 DNS 解析（绕过 runner 本地 DNS）==="
+          for ns in 8.8.8.8 1.1.1.1 223.5.5.5; do
+            echo "--- 通过 $ns 查询 ---"
+            timeout 20 nslookup cxcy.upln.cn $ns 2>&1 | tail -5 || echo "  查询失败"
+          done
+
+          echo "=== 3) curl 指定 IP（--resolve 绕过 DNS）==="
+          timeout 30 curl -sS -k -o /dev/null -w "HTTP %{http_code} | %{time_total}s\n" \
+            --resolve cxcy.upln.cn:443:$IP https://cxcy.upln.cn/ 2>&1 | head -3 \
+            || echo "  失败（退出码 $?）"
+
+          echo "=== 4) 指定 Host 头直连 IP ==="
+          timeout 30 curl -sS -k -o /dev/null -w "HTTP %{http_code}\n" \
+            -H "Host: cxcy.upln.cn" "https://$IP/" 2>&1 | head -3 \
+            || echo "  失败（退出码 $?）"
+
+          echo "=== 5) 对照：能连通的国内站点 ==="
+          timeout 20 curl -sS -o /dev/null -w "baidu HTTP %{http_code}\n" https://www.baidu.com/ || echo "baidu 失败"
+
+      - name: 结论
+        run: |
+          echo "若 TCP 可连但 DNS 失败 → 可用硬编码 IP + --resolve 绕过，云端方案仍可行"
+          echo "若 TCP 也不可连     → 网络路径不通，云端采集彻底不可行，必须本机运行"
