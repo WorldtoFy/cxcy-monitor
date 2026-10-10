@@ -3,7 +3,12 @@ name: 部署监控台网页
 on:
   push:
     branches: [main]
-    paths: ["data/comps.json", "web/**", "index.html", ".github/workflows/pages.yml"]
+    paths:
+      - "data/comps.json"
+      - "data/awards.json"
+      - "web/**"
+      - "index.html"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -23,16 +28,18 @@ jobs:
 
       - name: 组装站点
         run: |
-          mkdir -p _site
+          mkdir -p _site/data
           cp index.html _site/
           cp -r web _site/web
-          mkdir -p _site/data
           cp data/comps.json _site/data/
+          # awards.json 由云端生成，可能尚未存在
+          if [ -f data/awards.json ]; then cp data/awards.json _site/data/; fi
 
       - uses: actions/configure-pages@v5
         with:
           # 自动开启 Pages（否则首次部署会因 Pages 未启用而失败）
           enablement: true
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
