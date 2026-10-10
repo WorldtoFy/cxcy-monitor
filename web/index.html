@@ -16,15 +16,36 @@
   </div>
 </header>
 
-<div class="kpis" id="kpis"></div>
+<nav class="tabs" id="tabs">
+  <button class="tab on" data-view="comps">竞赛 <span id="n-comps"></span></button>
+  <button class="tab" data-view="awards">获奖公示 <span id="n-awards"></span></button>
+</nav>
 
-<div class="tools">
-  <input id="q" type="search" placeholder="搜索竞赛名称…" autocomplete="off">
-  <label class="chk"><input type="checkbox" id="hideExpired" checked> 隐藏已截止</label>
-</div>
+<!-- ============ 竞赛视图 ============ -->
+<section id="view-comps">
+  <div class="kpis" id="kpis"></div>
 
-<main id="list"></main>
+  <div class="tools">
+    <input id="q" type="search" placeholder="搜索竞赛名称…" autocomplete="off">
+    <label class="chk"><input type="checkbox" id="hideExpired" checked> 隐藏已截止</label>
+  </div>
 
+  <main id="list"></main>
+</section>
+
+<!-- ============ 获奖公示视图 ============ -->
+<section id="view-awards" hidden>
+  <div class="tools">
+    <input id="qa" type="search" placeholder="搜索公示标题…" autocomplete="off">
+  </div>
+  <main id="alist"></main>
+  <div class="hint">
+    附件下载请点「打开公告页」——那里是官方稳定地址。<br>
+    平台的文件下载链接是一次性凭证，会过期，所以不在这里直接给出。
+  </div>
+</section>
+
+<!-- ============ 详情抽屉 ============ -->
 <div class="sheet" id="sheet" hidden>
   <div class="sheet-mask" data-close></div>
   <div class="sheet-body">
