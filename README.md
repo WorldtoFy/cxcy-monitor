@@ -76,6 +76,32 @@ GitHub Actions（每 6 小时）
 
 > 以 `_` 开头的键是说明文字，程序会忽略。
 
+## ⚠️ 部署前必读：GitHub Actions 跑不了这个项目
+
+已实测确认（见 `deploy/README.md` 的完整证据）：**GitHub Actions 的 runner
+无法访问 `cxcy.upln.cn`**，因为它是纯国内平台。
+
+| 测试层级 | 结果 |
+|---|---|
+| runner 本地 DNS | `SERVFAIL` |
+| 公共 DNS 查询 | 失败 |
+| **硬编码 IP 直连（完全绕过 DNS）** | **`HTTP 000`** |
+
+第三项是关键：**不只是 DNS 问题，网络路径本身不通**，所以换 DNS、写 hosts
+之类的绕过手段都无效。仓库里的 `.github/workflows/monitor.yml` 保留作为参考，
+但**实际采集必须放在国内网络运行**。
+
+**推荐的两种国内部署方式见 [deploy/README.md](deploy/README.md)：**
+
+- **阿里云 FC（函数计算）** —— 推荐。零维护，原生定时触发器。
+  用 `cxcy/fc_handler.py`，状态持久化到 GitHub 仓库（不需要 OSS）。
+- **阿里云 ECS（云服务器）** —— 零代码改动，`deploy/ecs_setup.sh` 一键部署。
+
+### 🔴 代理必须绕过 upln.cn
+
+若挂了代理，**必须把 `upln.cn` 加入直连列表**，否则采集会静默失败。
+实测：同一台机器同一分钟，代理开启时接口超时，关闭后立刻恢复 24 个竞赛。
+
 ## 本地运行
 
 ```bash
