@@ -162,7 +162,10 @@ class Platform:
         path = r if isinstance(r, str) else (r or {}).get("result") or ""
         if not path:
             raise RuntimeError(f"未能获取下载票据: fileId={file_id}")
-        return SITE + "provincial" + path
+        # 注意：path 形如 "/sys/common/static?ticket=..."，必须以 "/" 拼接。
+        # 早期版本写成 SITE + "provincial" + path，漏了斜杠，导致域名与路径粘连
+        # （https://cxcy.upln.cnprovincial/...），链接在手机上打不开。
+        return f"{SITE}/provincial{path}"
 
 
 def detail_page_url(com_id: str) -> str:
