@@ -1,0 +1,15 @@
+[Unit]
+Description=每 6 小时运行一次竞赛监控
+Documentation=https://github.com/WorldtoFy/cxcy-monitor
+
+[Timer]
+# 每 6 小时；Persistent=true 表示关机期间错过的运行会在开机后补跑一次
+OnCalendar=*-*-* 00,06,12,18:00:00
+Persistent=true
+# 启动后若距上次运行超过 6 小时则立即跑一次，避免刚部署完等半天
+OnBootSec=3min
+RandomizedDelaySec=120
+Unit=cxcy-monitor.service
+
+[Install]
+WantedBy=timers.target
