@@ -1,0 +1,30 @@
+[Unit]
+Description=竞赛监控：抓取报名截止与获奖公示并推送提醒
+Documentation=https://github.com/WorldtoFy/cxcy-monitor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/cxcy-monitor
+EnvironmentFile=/etc/cxcy-monitor.env
+ExecStart=/opt/cxcy-monitor/venv/bin/python -m cxcy.main
+
+# 失败重试一次（国内网络偶发抖动）
+Restart=on-failure
+RestartSec=60
+
+# 加固：最小权限运行
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/cxcy-monitor
+
+# 日志进 journald
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=cxcy-monitor
+
+[Install]
+WantedBy=multi-user.target
