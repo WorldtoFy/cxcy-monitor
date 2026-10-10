@@ -173,10 +173,6 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--award-pages", type=int, default=4,
                     help="扫描最近几页公告（每页 100 条，默认 4 页）。")
     args = ap.parse_args(argv)
-    # 保险：DRY_RUN=1 等价于 --dry-run，防止在已上线环境里误运行本机采集
-    # （本机与云端共用同一份 GitHub 状态，真跑会互相"消费"提醒标记）
-    if os.environ.get("DRY_RUN", "").strip() == "1":
-        args.dry_run = True
     cfg = load_config()
     # 命令行优先，其次 config.json，最后默认值
     if args.award_cap == DEFAULT_AWARD_CAP and "award_cap" in cfg:
