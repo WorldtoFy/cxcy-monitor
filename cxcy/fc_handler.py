@@ -35,6 +35,9 @@ API = "https://api.github.com"
 # 需要持久化的文件（state 是去重状态，details 是竞赛正文，comps 供网页读取）
 PERSIST = ("data/state.json", "data/details.json", "data/comps.json")
 
+# 供手机网页读取的获奖公示清单（附件只给元信息，下载走官方页面）
+AWARDS_FILE = "data/awards.json"
+
 
 class GitHubFiles:
     """把 GitHub 仓库当成无状态环境下的持久化存储。"""
@@ -278,6 +281,19 @@ def handler(event, context):  # noqa: ANN001 - FC 的固定签名
         else:
             failed.append("comps")
 
+    # 顺手导出获奖公示清单供网页读取（复用已有 GitHub 通道，无需额外配置）
+    try:
+        awards_payload = _awards_payload(plat, limit=40)
+        if awards_payload:
+            old, sha = gh.read(AWARDS_FILE)
+            if awards_payload != old:
+                if gh.write(AWARDS_FILE, awards_payload, sha, f"chore: 更新公示清单 {stamp}"):
+                    saved.append("awards")
+                else:
+                    failed.append("awards")
+    except Exception as e:  # noqa: BLE001
+        note(f"导出公示清单失败: {type(e).__name__}: {e}")
+
     note(f"写回仓库: 成功 {saved or '无'} 失败 {failed or '无'}")
 
     return {
@@ -349,27 +365,145 @@ def _monitor_awards(store: Store, plat: Platform, pusher: Ntfy | None,
     pushed = 0
     for a in fresh:
         aid, title = a["id"], (a.get("name") or "").strip()
+        # 只取附件元信息（名称/大小/文件id），**不在推送时取票据**：
+        # 票据是短期凭证，而通知会长期留在通知栏里，取早了用户点开时已失效。
+        # 下载改由手机网页按需换取新票据。
         files: list[dict] = []
         try:
             detail = plat.announcement(aid)
             for f in (detail.get("fileList") or []):
-                try:
-                    files.append({"name": f.get("name"), "size": f.get("size"),
-                                  "url": plat.download_url(f["id"])})
-                except Exception as e:  # noqa: BLE001
-                    print(f"! 附件取票据失败 {f.get('name')}: {e}")
+                files.append({"name": f.get("name"), "size": f.get("size"),
+                              "id": f.get("id")})
         except Exception as e:  # noqa: BLE001
             print(f"! 公告详情失败 {title}: {e}")
 
         store.mark_award(aid, {"name": title, "time": a.get("createTime"),
                                "competition_id": a.get("competitionId"),
-                               "files": [{"name": f["name"], "size": f["size"]} for f in files]})
+                               "files": [{"name": f["name"], "size": f["size"],
+                                          "id": f.get("id")} for f in files]})
         if not pusher or pushed >= cap:
             continue
-        first = files[0]["url"] if files else f"https://cxcy.upln.cn/competitionDetails?id={aid}"
+        # 点击跳转手机网页的对应锚点（永久有效），而不是一次性票据链接
         body = f"{title[:60]}\n{(a.get('createTime') or '')[:16]}"
         if files:
-            body += f"\n📎 {files[0]['name'][:50]}" + (f" 等 {len(files)} 个文件" if len(files) > 1 else "")
-        pusher.send("🏅 获奖公示", body, click=first, tags=["trophy"], priority=4)
+            n = len(files)
+            body += f"\n📎 {files[0]['name'][:42]}" + (f" 等 {n} 个文件" if n > 1 else "")
+            body += "\n点此在网页中下载附件"
+        pusher.send("🏅 获奖公示", body,
+                    click=f"{WEB_BASE}/?award={aid}",
+                    tags=["trophy"], priority=4)
         pushed += 1
     return pushed
+
+
+# 通知点击跳转到手机网页（永久有效），而不是会过期的一次性票据链接
+WEB_BASE = os.environ.get(
+    "WEB_BASE", "https://worldtofy.github.io/cxcy-monitor").rstrip("/")
+
+
+def _awards_payload(plat: Platform, limit: int = 40) -> str:
+    """导出获奖公示清单（含附件名称/大小）供手机网页读取。
+
+    不含下载票据 —— 票据是短期凭证，必须点击时才取。
+    附件下载引导到官方公告页，那里是稳定地址。
+    """
+    out: list[dict] = []
+    for page in range(1, 4):
+        recs, _t = plat.announcements(page=page, size=100)
+        if not recs:
+            break
+        for a in recs:
+            if not is_award_notice(a.get("name") or ""):
+                continue
+            out.append({
+                "id": a.get("id"),
+                "name": (a.get("name") or "").strip(),
+                "time": a.get("createTime"),
+                "competitionId": a.get("competitionId"),
+                "page": f"https://cxcy.upln.cn/competitionDetails?id={a.get('id')}",
+                "files": [],
+            })
+            if len(out) >= limit:
+                break
+        if len(out) >= limit:
+            break
+
+    # 前若干条附带附件清单（仍不含票据）
+    for a in out[:12]:
+        try:
+            d = plat.announcement(a["id"])
+            a["files"] = [{"name": f.get("name"), "size": f.get("size")}
+                          for f in (d.get("fileList") or [])]
+        except Exception:  # noqa: BLE001
+            pass
+
+    return json.dumps({"generated_at": datetime.now().isoformat(timespec="seconds"),
+                       "count": len(out), "awards": out},
+                      ensure_ascii=False, indent=1)
+
+
+def list_awards(event, context):  # noqa: ANN001 - FC 函数入口（供手机网页调用）
+    """返回最近的获奖公示列表。只给元信息，不给票据。"""
+    limit = 40
+    try:
+        limit = int((event or {}).get("limit") or 40)
+    except (TypeError, ValueError):
+        pass
+
+    plat = Platform()
+    out: list[dict] = []
+    for page in range(1, 4):
+        recs, _t = plat.announcements(page=page, size=100)
+        if not recs:
+            break
+        for a in recs:
+            if is_award_notice(a.get("name") or ""):
+                out.append({
+                    "id": a.get("id"),
+                    "name": (a.get("name") or "").strip(),
+                    "time": a.get("createTime"),
+                    "competitionId": a.get("competitionId"),
+                })
+            if len(out) >= limit:
+                break
+        if len(out) >= limit:
+            break
+
+    # 前若干条附带附件清单（仍不含票据）
+    for a in out[:12]:
+        try:
+            d = plat.announcement(a["id"])
+            a["files"] = [{"name": f.get("name"), "size": f.get("size"), "id": f.get("id")}
+                          for f in (d.get("fileList") or [])]
+        except Exception:  # noqa: BLE001
+            a["files"] = []
+
+    return {"ok": True, "count": len(out), "awards": out}
+
+
+def get_download_url(event, context):  # noqa: ANN001 - FC 函数入口（供手机网页调用）
+    """按需换取一次新的下载票据。
+
+    票据是短期凭证，必须"点的时候才取"——这也是它不能提前写进通知的原因。
+    """
+    file_id = str((event or {}).get("fileId") or "").strip()
+    if not file_id:
+        return {"ok": False, "error": "缺少 fileId"}
+
+    plat = Platform()
+    try:
+        url = plat.download_url(file_id)
+    except Exception as e:  # noqa: BLE001
+        return {"ok": False, "error": f"{type(e).__name__}: {e}"}
+
+    # 校验票据确实能取到文件，避免把坏链接交给用户
+    try:
+        r = plat.s.get(url, timeout=30, stream=True)
+        size = int(r.headers.get("content-length") or 0)
+        r.close()
+        if r.status_code != 200:
+            return {"ok": False, "error": f"票据校验失败 HTTP {r.status_code}"}
+    except Exception as e:  # noqa: BLE001
+        return {"ok": False, "error": f"票据校验异常: {type(e).__name__}"}
+
+    return {"ok": True, "url": url, "size": size}
