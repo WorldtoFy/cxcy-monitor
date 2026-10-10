@@ -383,14 +383,15 @@ def _monitor_awards(store: Store, plat: Platform, pusher: Ntfy | None,
                                           "id": f.get("id")} for f in files]})
         if not pusher or pushed >= cap:
             continue
-        # 点击跳转手机网页的对应锚点（永久有效），而不是一次性票据链接
+        # 点击跳转到手机网页的对应锚点（永久有效），而不是一次性票据链接。
+        # 注意必须带 /web/ 路径：根目录是 meta refresh 跳转页，会丢掉查询参数。
         body = f"{title[:60]}\n{(a.get('createTime') or '')[:16]}"
         if files:
             n = len(files)
             body += f"\n📎 {files[0]['name'][:42]}" + (f" 等 {n} 个文件" if n > 1 else "")
-            body += "\n点此在网页中下载附件"
+            body += "\n点此在网页中查看与下载"
         pusher.send("🏅 获奖公示", body,
-                    click=f"{WEB_BASE}/?award={aid}",
+                    click=f"{WEB_BASE}/web/?award={aid}",
                     tags=["trophy"], priority=4)
         pushed += 1
     return pushed
