@@ -4,7 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>竞赛监控台</title>
-<meta http-equiv="refresh" content="0;url=web/">
+<script>
+  // 必须用 JS 跳转而不是 meta refresh：
+  // meta refresh 的 url 写死为 "web/"，会把 ?award=xxx 这类查询参数丢掉，
+  // 而获奖公示的推送通知正是靠这个参数定位到具体条目。
+  location.replace("web/" + location.search + location.hash);
+</script>
 <style>
   body{margin:0;font:15px/1.7 "Microsoft YaHei",system-ui,sans-serif;background:#f6f8fa;color:#1f2328;
        display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center}
@@ -15,7 +20,10 @@
   <div>
     <h1 style="font-size:18px">🏆 竞赛监控台</h1>
     <p>正在进入监控台…</p>
-    <p><a href="web/">如果没有自动跳转，请点这里</a></p>
+    <p><a id="go" href="web/">如果没有自动跳转，请点这里</a></p>
   </div>
+  <script>
+    document.getElementById("go").href = "web/" + location.search + location.hash;
+  </script>
 </body>
 </html>
