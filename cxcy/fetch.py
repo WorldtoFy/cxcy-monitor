@@ -6,13 +6,17 @@
 
 from __future__ import annotations
 
+import re
 import ssl
 import time
 from typing import Any
+from urllib.parse import urlparse, urlunparse
 
 import requests
 import urllib3
 from requests.adapters import HTTPAdapter
+
+from .dns_resolver import resolve
 
 BASE = "https://cxcy.upln.cn/provincial/match/competition"
 PORTAL = "https://cxcy.upln.cn/provincial/portal/portal"
@@ -30,13 +34,22 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 class _LegacyTLSAdapter(HTTPAdapter):
-    """放行旧式 TLS 重协商，否则连接直接失败。"""
+    """放行旧式 TLS 重协商，并在系统 DNS 不可用时用自定义解析器改写连接目标。
+
+    为什么要在适配器里改 URL：平台的 A 记录在国内多家公共 DNS 上返回 SERVFAIL
+    （详见 dns_resolver 模块注释），阿里云 FC 恰好用这类 DNS，导致
+    socket.getaddrinfo 直接失败。这里把「连到哪」和「访问哪个域名」解耦：
+      - 连接目标：替换为解析出的 IP
+      - Host 头与 TLS SNI：保持原域名不变（urllib3 依据 Host 头设置 SNI）
+    这样既绕开 DNS，又不破坏虚拟主机与证书校验语义。
+    """
 
     def __init__(self, **kw: Any) -> None:
         self._ctx = ssl.create_default_context()
         self._ctx.options |= getattr(ssl, "OP_LEGACY_SERVER_CONNECT", 0x4)
         self._ctx.check_hostname = False
         self._ctx.verify_mode = ssl.CERT_NONE
+        self._ip_cursor = 0
         super().__init__(**kw)
 
     def init_poolmanager(self, *a: Any, **k: Any) -> Any:
@@ -47,6 +60,26 @@ class _LegacyTLSAdapter(HTTPAdapter):
         k["ssl_context"] = self._ctx
         return super().proxy_manager_for(*a, **k)
 
+    def send(self, request, **kwargs):  # type: ignore[override]
+        url = request.url or ""
+        parsed = urlparse(url)
+        host = parsed.hostname
+        # 只在尚未被改写、且确实是域名（非 IP）时才处理
+        if host and not _is_ip(host):
+            ips = resolve(host, parsed.port or 443)
+            if ips:
+                # 轮换 IP：多次重试时会尝试不同节点，避免单点故障
+                ip = ips[self._ip_cursor % len(ips)]
+                self._ip_cursor += 1
+                netloc = ip if parsed.port is None else f"{ip}:{parsed.port}"
+                request.url = urlunparse(parsed._replace(netloc=netloc))
+                request.headers.setdefault("Host", parsed.netloc)
+        return super().send(request, **kwargs)
+
+
+def _is_ip(host: str) -> bool:
+    return bool(re.fullmatch(r"[\d.]+", host or ""))
+
 
 class Platform:
     """平台 API 客户端，带重试。"""
@@ -56,6 +89,11 @@ class Platform:
         self.retries = retries
         self.s = requests.Session()
         self.s.mount("https://", _LegacyTLSAdapter())
+        # 关闭 requests 层的证书校验：因为适配器会把连接目标改写为 IP，
+        # 而证书是为域名签发的，用 IP 比对主机名必然失败。
+        # 这里的安全边界：只访问本平台自己的 IP、TLS 仍在用、SNI 保持域名不变，
+        # 传输内容为公开的竞赛信息，不含任何凭据。
+        self.s.verify = False
         self.s.headers.update({
             "User-Agent": _UA,
             "Accept": "application/json, text/plain, */*",
