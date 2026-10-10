@@ -85,56 +85,84 @@ class GitHubFiles:
 
 
 def handler(event, context):  # noqa: ANN001 - FC 的固定签名
-    """FC 入口。返回体只用于日志，不参与业务。"""
+    """FC 入口。
+
+    返回值刻意包含完整诊断信息：当函数未配置执行角色时日志不可用，
+    此时「返回结果」是唯一的观测手段，因此不能依赖 print。
+    """
+    logs: list[str] = []
+    started = datetime.now()
+
+    def note(msg: str) -> None:
+        logs.append(f"{datetime.now().strftime('%H:%M:%S')} {msg}")
+        print(msg)          # 有日志通道时也会进 SLS
+
     topic = os.environ.get("NTFY_TOPIC", "").strip()
     token = os.environ.get("GH_TOKEN", "").strip()
     repo = os.environ.get("GH_REPO", "WorldtoFy/cxcy-monitor").strip()
     seed = os.environ.get("SEED", "").strip() == "1"
 
+    note(f"启动；repo={repo} seed={seed} topic={'已配置' if topic else '缺失'}")
+
     if not topic:
-        return {"ok": False, "error": "未配置 NTFY_TOPIC"}
+        return {"ok": False, "error": "未配置 NTFY_TOPIC", "logs": logs}
     if not token:
-        return {"ok": False, "error": "未配置 GH_TOKEN（无状态环境需要它读写状态）"}
+        return {"ok": False, "error": "未配置 GH_TOKEN（无状态环境需要它读写状态）", "logs": logs}
 
     gh = GitHubFiles(repo, token)
 
     # ---- 1. 从仓库恢复状态 ----
     cached: dict[str, tuple[str, str]] = {}
     for rel in PERSIST:
-        text, sha = gh.read(rel)
-        cached[rel] = (text, sha)
+        try:
+            text, sha = gh.read(rel)
+            cached[rel] = (text, sha)
+            note(f"读取 {rel}: {len(text)} 字符")
+        except Exception as e:  # noqa: BLE001
+            note(f"读取 {rel} 失败: {e}")
+            cached[rel] = ("", "")
 
     store = Store.__new__(Store)          # 不走文件系统，手工装配
     store.path = None                     # type: ignore[assignment]
     store.data = {"version": 1, "comps": {}, "awards": {}, "runs": []}
-    if cached["data/state.json"][0]:
+    if cached.get("data/state.json", ("", ""))[0]:
         try:
             store.data = json.loads(cached["data/state.json"][0])
-        except json.JSONDecodeError:
-            pass
+        except json.JSONDecodeError as e:
+            note(f"state.json 解析失败，改用空状态: {e}")
     store.data.setdefault("comps", {})
     store.data.setdefault("awards", {})
     store.data.setdefault("runs", [])
     store._details = {}
-    if cached["data/details.json"][0]:
+    if cached.get("data/details.json", ("", ""))[0]:
         try:
             store._details = json.loads(cached["data/details.json"][0])
         except json.JSONDecodeError:
             pass
+    note(f"恢复状态: {len(store.data['comps'])} 个竞赛, {len(store.data['awards'])} 条公示")
 
     first_run = not store.data["comps"]
     seed = seed or first_run
+    if first_run:
+        note("检测到空状态，自动进入 seed 模式（只建基线，不推送）")
 
+    # ---- 2. 抓取竞赛 ----
     plat = Platform()
-    # DRY_RUN=1 时只跑逻辑不推送，用于测试与排障
+    year = datetime.now().year
+    try:
+        comps = plat.ongoing(year)
+    except Exception as e:  # noqa: BLE001
+        note(f"抓取失败: {type(e).__name__}: {e}")
+        return {"ok": False, "error": f"抓取竞赛列表失败: {e}", "logs": logs}
+
+    note(f"抓到 {year} 年进行中竞赛 {len(comps)} 个")
+    if not comps:
+        return {"ok": False, "error": f"{year} 年抓到 0 个竞赛，疑接口异常，已终止以免误判",
+                "logs": logs}
+
     dry = os.environ.get("DRY_RUN", "").strip() == "1"
     pusher = None if dry else Ntfy(topic, os.environ.get("NTFY_SERVER", "https://ntfy.sh"))
-
-    # ---- 2. 竞赛：判新 + 到档提醒 ----
-    year = datetime.now().year
-    comps = plat.ongoing(year)
-    if not comps:
-        return {"ok": False, "error": f"{year} 年抓到 0 个竞赛，疑接口异常，已终止以免误判"}
+    note(f"推送通道: {'DRY_RUN（不推送）' if dry else 'ntfy 已就绪'}")
 
     def days_left_of(end: str) -> int | None:
         for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d"):
@@ -150,7 +178,7 @@ def handler(event, context):  # noqa: ANN001 - FC 的固定签名
 
     comps.sort(key=lambda c: days_left_of(c.get("endTime") or "") or 9999)
 
-    new_count = alerted = 0
+    new_count = alerted = detail_ok = 0
     cap = int(os.environ.get("ALERT_CAP", "4"))
     for c in comps:
         cid, name, end = c["id"], (c.get("name") or "").strip(), c.get("endTime") or ""
@@ -167,7 +195,9 @@ def handler(event, context):  # noqa: ANN001 - FC 的固定签名
                 deadlines = extract_deadlines(detail_text)
                 attach = len(d.get("fileList") or [])
             except Exception as e:  # noqa: BLE001
-                print(f"! 详情抓取失败 {name}: {e}")
+                note(f"详情抓取失败 {name}: {e}")
+        if detail_text.strip():
+            detail_ok += 1
 
         store.upsert(cid, {
             "name": name, "synopsis": (c.get("synopsis") or "").strip(),
@@ -185,6 +215,7 @@ def handler(event, context):  # noqa: ANN001 - FC 的固定签名
                 alerted += 1
                 pusher.send("🆕 新竞赛发布", _one_liner(name, end, days),
                             click=detail_page_url(cid), tags=["new"], priority=4)
+                note(f"推送新竞赛: {name[:30]}")
             continue
         if days is not None and days >= 0:
             levels = store.pending_levels(cid, days)
@@ -194,57 +225,74 @@ def handler(event, context):  # noqa: ANN001 - FC 的固定签名
                 icon, prio = {7: ("⏳", 3), 3: ("⚠️", 4), 1: ("🔥", 5), 0: ("🚨", 5)}.get(lv, ("⏰", 3))
                 pusher.send(f"{icon} {name[:28]}", _one_liner(name, end, days),
                             click=detail_page_url(cid), tags=["warning"], priority=prio)
+                note(f"推送提醒[{lv}天]: {name[:30]}")
                 for lv2 in levels:
                     store.mark_reminded(cid, lv2)
             elif levels:
-                # 无推送通道（dry-run）时也要标记，避免下次重复判定
                 for lv2 in levels:
                     store.mark_reminded(cid, lv2)
+
+    note(f"竞赛处理完成: 新增 {new_count}, 推送 {alerted}, 详情覆盖 {detail_ok}/{len(comps)}")
 
     # ---- 3. 获奖公示 ----
     award_pushed = 0
     if os.environ.get("AWARD_NOTIFY", "1") != "0":
         try:
             award_pushed = _monitor_awards(store, plat, pusher, seed,
-                                           int(os.environ.get("AWARD_CAP", "3")))
+                                           int(os.environ.get("AWARD_CAP", "3")), note)
+            note(f"获奖公示推送 {award_pushed} 条")
         except Exception as e:  # noqa: BLE001
-            print(f"! 获奖公示监测失败: {e}")
+            note(f"获奖公示监测失败: {type(e).__name__}: {e}")
 
     store.log_run({"total": len(comps), "new": new_count,
                    "alerted": alerted, "awards": award_pushed, "seed": bool(seed)})
 
     # ---- 4. 写回仓库（触发 Pages 重新部署，手机网页同步更新）----
     # 注意：这里刻意不加 [skip ci]，因为正是要靠这次提交触发 Pages 部署
-    saved = []
+    saved: list[str] = []
+    failed: list[str] = []
     stamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+
     new_state = json.dumps(store.data, ensure_ascii=False, indent=1, sort_keys=True)
-    if new_state != cached["data/state.json"][0]:
-        if gh.write("data/state.json", new_state, cached["data/state.json"][1],
+    if new_state != cached.get("data/state.json", ("", ""))[0]:
+        if gh.write("data/state.json", new_state, cached.get("data/state.json", ("", ""))[1],
                     f"chore: 更新监控状态 {stamp}"):
             saved.append("state")
+        else:
+            failed.append("state")
 
     live = {k: v for k, v in store._details.items() if k in store.data["comps"]}
     new_details = json.dumps(live, ensure_ascii=False)
-    if new_details != cached["data/details.json"][0]:
-        if gh.write("data/details.json", new_details, cached["data/details.json"][1],
+    if new_details != cached.get("data/details.json", ("", ""))[0]:
+        if gh.write("data/details.json", new_details, cached.get("data/details.json", ("", ""))[1],
                     f"chore: 更新竞赛详情 {stamp}"):
             saved.append("details")
+        else:
+            failed.append("details")
 
     web = _web_payload(store)
-    if web != cached["data/comps.json"][0]:
-        if gh.write("data/comps.json", web, cached["data/comps.json"][1],
+    if web != cached.get("data/comps.json", ("", ""))[0]:
+        if gh.write("data/comps.json", web, cached.get("data/comps.json", ("", ""))[1],
                     f"chore: 更新网页数据 {stamp}"):
             saved.append("comps")
+        else:
+            failed.append("comps")
+
+    note(f"写回仓库: 成功 {saved or '无'} 失败 {failed or '无'}")
 
     return {
         "ok": True,
         "date": stamp,
         "seed": seed,
+        "elapsed_sec": round((datetime.now() - started).total_seconds(), 1),
         "comps": len(comps),
+        "detail_ok": detail_ok,
         "new": new_count,
         "alerted": alerted,
         "awards": award_pushed,
         "saved": saved,
+        "failed": failed,
+        "logs": logs,
     }
 
 
@@ -278,7 +326,12 @@ def _web_payload(store: Store) -> str:
 
 
 def _monitor_awards(store: Store, plat: Platform, pusher: Ntfy | None,
-                    seed: bool, cap: int) -> int:
+                    seed: bool, cap: int, note=None) -> int:
+    def log(msg: str) -> None:
+        print(msg)
+        if note:
+            note(msg)
+
     anns: list[dict] = []
     for p in range(1, 5):
         recs, _t = plat.announcements(page=p, size=100)
