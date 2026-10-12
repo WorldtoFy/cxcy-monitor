@@ -1,7 +1,15 @@
 {
- "generated_at": "2026-10-12T14:00:17",
+ "generated_at": "2026-10-12T20:00:20",
  "count": 40,
  "awards": [
+  {
+   "id": "fd7dacb4880a4915865842636e0c5df3",
+   "name": "“枫叶优体”杯辽宁省大学生中华优秀传统文化创新设计大赛获奖公示",
+   "time": "2026-10-12 15:31:04",
+   "competitionId": "d983b95e65ff5943c7ff6f442a741a49",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=fd7dacb4880a4915865842636e0c5df3",
+   "files": []
+  },
   {
    "id": "681ae21534f94fdfa0badcb218d1c63d",
    "name": "中国大学生机械工程创新创意大赛-无损检测创新实践与应用赛（辽宁赛区）获奖公示",
@@ -322,14 +330,6 @@
    "time": "2026-07-02 14:47:39",
    "competitionId": "2346a8d357d82df70f675325717b0648",
    "page": "https://cxcy.upln.cn/competitionDetails?id=f35f378503bb954e086fb2ee6e96dc19",
-   "files": []
-  },
-  {
-   "id": "5ef6279deafd5802ecdf9bb8630cec1d",
-   "name": "2026年辽宁省大学生管理决策模拟大赛获奖名单",
-   "time": "2026-06-30 15:07:06",
-   "competitionId": "6c7e7677d6c19007ef0b79de1c989745",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=5ef6279deafd5802ecdf9bb8630cec1d",
    "files": []
   }
  ]
