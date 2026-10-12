@@ -1,7 +1,36 @@
 {
- "generated_at": "2026-10-12T08:00:13",
+ "generated_at": "2026-10-12T14:00:17",
  "count": 40,
  "awards": [
+  {
+   "id": "681ae21534f94fdfa0badcb218d1c63d",
+   "name": "中国大学生机械工程创新创意大赛-无损检测创新实践与应用赛（辽宁赛区）获奖公示",
+   "time": "2026-10-12 12:34:38",
+   "competitionId": "dc2790b93facdebcc3a040d62007e684",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=681ae21534f94fdfa0badcb218d1c63d",
+   "files": []
+  },
+  {
+   "id": "aca83699b6b94abfa85126ddb685930d",
+   "name": "“西门子”杯中国智能制造挑战赛(辽宁赛区)获奖公示",
+   "time": "2026-10-12 09:37:42",
+   "competitionId": "22f9b299c19eb1d9d6b3d5a7b1e80fa3",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=aca83699b6b94abfa85126ddb685930d",
+   "files": []
+  },
+  {
+   "id": "f067e1f6efe45e44aaec6ccf5eb5b53d",
+   "name": "学创杯获奖信息公示",
+   "time": "2026-10-10 12:53:53",
+   "competitionId": "367d8e8fae87f31b1bdde2193203c1d1",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=f067e1f6efe45e44aaec6ccf5eb5b53d",
+   "files": [
+    {
+     "name": "学创杯获奖信息（辽宁）.xls",
+     "size": 56320.0
+    }
+   ]
+  },
   {
    "id": "2ac5362e32a0db9ec4cd88d874488ec9",
    "name": "2026年第七届辽宁省大学生三维数字化创新设计大赛获奖名单公示（‘数马&华教杯’增减材复合制造及数字孪生技术创新应用大赛）",
@@ -101,16 +130,7 @@
    "time": "2026-09-15 19:17:16",
    "competitionId": "7eb50f75710051c1dd9447dddf3bcede",
    "page": "https://cxcy.upln.cn/competitionDetails?id=08fef69624ba8a629b78db3b3dd6e36b",
-   "files": [
-    {
-     "name": "2026第18届全国大学生广告艺术大赛（辽宁赛区）获奖名单.xlsx",
-     "size": 408399.0
-    },
-    {
-     "name": "2026第18届全国大学生广告艺术大赛大创平台获奖作品报名要求.pdf",
-     "size": 159547.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "f1118ad2495cec2ec2b8cc26a72ef1b7",
@@ -310,30 +330,6 @@
    "time": "2026-06-30 15:07:06",
    "competitionId": "6c7e7677d6c19007ef0b79de1c989745",
    "page": "https://cxcy.upln.cn/competitionDetails?id=5ef6279deafd5802ecdf9bb8630cec1d",
-   "files": []
-  },
-  {
-   "id": "196a93d504fa4238e375f6403cfe5bed",
-   "name": "中国大学生计算机博弈大赛(辽宁赛区)获奖公示",
-   "time": "2026-06-30 11:28:06",
-   "competitionId": "4412ff99dd4a737bb7932d66c30e566d",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=196a93d504fa4238e375f6403cfe5bed",
-   "files": []
-  },
-  {
-   "id": "fde5ded93164c791dc5d7b86f2eaa739",
-   "name": "2026年辽宁省大学生数字营销创新大赛拟获奖名单",
-   "time": "2026-06-29 19:00:00",
-   "competitionId": "e555f8f8e053e28819bc53f031f08b64",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=fde5ded93164c791dc5d7b86f2eaa739",
-   "files": []
-  },
-  {
-   "id": "a682ec17da94b2a68b27a10d9ffe95c6",
-   "name": "辽宁省大学生无线电测定向大赛获奖公示",
-   "time": "2026-06-28 20:08:58",
-   "competitionId": "fb756b2a0f809b321d28c2eafdfd0438",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=a682ec17da94b2a68b27a10d9ffe95c6",
    "files": []
   }
  ]
