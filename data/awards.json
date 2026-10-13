@@ -1,7 +1,15 @@
 {
- "generated_at": "2026-10-13T14:00:16",
+ "generated_at": "2026-10-13T20:00:29",
  "count": 40,
  "awards": [
+  {
+   "id": "c4d3a8460f5b41c0bd6b5be8a7d3ae78",
+   "name": "辽宁省大学生化工设计创新创业竞赛获奖公示",
+   "time": "2026-10-13 18:20:47",
+   "competitionId": "46f628071ace580ed0895e9939db2436",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=c4d3a8460f5b41c0bd6b5be8a7d3ae78",
+   "files": []
+  },
   {
    "id": "fd7dacb4880a4915865842636e0c5df3",
    "name": "“枫叶优体”杯辽宁省大学生中华优秀传统文化创新设计大赛获奖公示",
@@ -322,14 +330,6 @@
    "time": "2026-07-03 11:58:44",
    "competitionId": "7f65da558fbc3b133a74e274a9d641ae",
    "page": "https://cxcy.upln.cn/competitionDetails?id=3a782265c5081214eb92990440c49fea",
-   "files": []
-  },
-  {
-   "id": "f35f378503bb954e086fb2ee6e96dc19",
-   "name": "辽宁省大学生建筑创新设计竞赛暨东北三省适老化建筑设计竞赛（“木憩”搭建设计赛道） 决赛成绩公告",
-   "time": "2026-07-02 14:47:39",
-   "competitionId": "2346a8d357d82df70f675325717b0648",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=f35f378503bb954e086fb2ee6e96dc19",
    "files": []
   }
  ]
