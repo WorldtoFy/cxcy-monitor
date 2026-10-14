@@ -1,7 +1,15 @@
 {
- "generated_at": "2026-10-14T08:00:22",
+ "generated_at": "2026-10-14T14:00:19",
  "count": 40,
  "awards": [
+  {
+   "id": "14e847a574944d358e6fe7e4cd6be109",
+   "name": "“学创杯”全国大学生创业综合模拟大赛（辽宁赛区）获奖公示",
+   "time": "2026-10-14 11:49:03",
+   "competitionId": "367d8e8fae87f31b1bdde2193203c1d1",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=14e847a574944d358e6fe7e4cd6be109",
+   "files": []
+  },
   {
    "id": "c4d3a8460f5b41c0bd6b5be8a7d3ae78",
    "name": "辽宁省大学生化工设计创新创业竞赛获奖公示",
@@ -33,19 +41,6 @@
    "competitionId": "22f9b299c19eb1d9d6b3d5a7b1e80fa3",
    "page": "https://cxcy.upln.cn/competitionDetails?id=aca83699b6b94abfa85126ddb685930d",
    "files": []
-  },
-  {
-   "id": "f067e1f6efe45e44aaec6ccf5eb5b53d",
-   "name": "2026年“学创杯”全国大学生创业综合模拟大赛（辽宁赛区）获奖公示",
-   "time": "2026-10-10 12:53:53",
-   "competitionId": "367d8e8fae87f31b1bdde2193203c1d1",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=f067e1f6efe45e44aaec6ccf5eb5b53d",
-   "files": [
-    {
-     "name": "学创杯获奖信息（辽宁）.xls",
-     "size": 56320.0
-    }
-   ]
   },
   {
    "id": "2ac5362e32a0db9ec4cd88d874488ec9",
