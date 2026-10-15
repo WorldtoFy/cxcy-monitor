@@ -1,7 +1,15 @@
 {
- "generated_at": "2026-10-15T08:00:20",
+ "generated_at": "2026-10-15T20:00:27",
  "count": 40,
  "awards": [
+  {
+   "id": "2871d10f189d42cba0849d360d7024e6",
+   "name": "辽宁省大学生机械创新设计大赛获奖公示",
+   "time": "2026-10-15 09:59:06",
+   "competitionId": "9c67dda35d48a387b35108bd5720e42b",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=2871d10f189d42cba0849d360d7024e6",
+   "files": []
+  },
   {
    "id": "14e847a574944d358e6fe7e4cd6be109",
    "name": "“学创杯”全国大学生创业综合模拟大赛（辽宁赛区）获奖公示",
@@ -317,14 +325,6 @@
    "time": "2026-07-03 14:43:58",
    "competitionId": "42a2979c38f1b4633cfd52ec3014c419",
    "page": "https://cxcy.upln.cn/competitionDetails?id=222a9df2af814ed8b4d2a3bf5b6517ab",
-   "files": []
-  },
-  {
-   "id": "3a782265c5081214eb92990440c49fea",
-   "name": "关于公布2026年辽宁省大学生智慧农业创新创业大赛获奖名单的通知",
-   "time": "2026-07-03 11:58:44",
-   "competitionId": "7f65da558fbc3b133a74e274a9d641ae",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=3a782265c5081214eb92990440c49fea",
    "files": []
   }
  ]
