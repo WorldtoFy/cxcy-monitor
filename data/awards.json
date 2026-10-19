@@ -1,7 +1,23 @@
 {
- "generated_at": "2026-10-19T08:00:18",
+ "generated_at": "2026-10-19T14:00:19",
  "count": 40,
  "awards": [
+  {
+   "id": "b70a14f65e8e4d0786b852c6ab43fd34",
+   "name": "辽宁省大学生数学建模竞赛获奖公示",
+   "time": "2026-10-19 11:49:43",
+   "competitionId": "0bef9ca354a462152a9b4f3cfda23c60",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=b70a14f65e8e4d0786b852c6ab43fd34",
+   "files": []
+  },
+  {
+   "id": "b9d81f1552b44b0c98a868e836b8ce80",
+   "name": "辽宁省大学生BIM应用技能大赛获奖公示",
+   "time": "2026-10-19 11:38:21",
+   "competitionId": "021f243a5292d2bdd9cef31f2ba915a3",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=b9d81f1552b44b0c98a868e836b8ce80",
+   "files": []
+  },
   {
    "id": "2871d10f189d42cba0849d360d7024e6",
    "name": "辽宁省大学生机械创新设计大赛获奖公示",
@@ -309,22 +325,6 @@
    "time": "2026-07-05 13:30:04",
    "competitionId": "96a3edd133deb802b9df019a6c901b0a",
    "page": "https://cxcy.upln.cn/competitionDetails?id=b2b7d484e7ff1cef1356664501bdf85a",
-   "files": []
-  },
-  {
-   "id": "f6bd6f33bb1d75ae0e82d73e6c87f7d9",
-   "name": "2026 年第六届辽宁省大学生金相技能大赛获奖名单公示",
-   "time": "2026-07-03 20:13:32",
-   "competitionId": "0c9dec2f08a2800e7bb50d5d7221af0b",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=f6bd6f33bb1d75ae0e82d73e6c87f7d9",
-   "files": []
-  },
-  {
-   "id": "222a9df2af814ed8b4d2a3bf5b6517ab",
-   "name": "第八届辽宁省大学生企业价值创造大赛成绩公示",
-   "time": "2026-07-03 14:43:58",
-   "competitionId": "42a2979c38f1b4633cfd52ec3014c419",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=222a9df2af814ed8b4d2a3bf5b6517ab",
    "files": []
   }
  ]
