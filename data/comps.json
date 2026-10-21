@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T14:00:12",
+ "generated_at": "2026-10-21T20:00:18",
  "count": 36,
  "comps": [
   {
@@ -430,6 +430,19 @@
    "url": "https://cxcy.upln.cn/match/details?comId=f1c708200a0c74bfb79145a45f3920bc"
   },
   {
+   "id": "687e1ada3286707973a54df04ebc65ea",
+   "name": "辽宁省大学生程序设计竞赛暨ICPC国际大学生程序设计竞赛（辽宁省赛）",
+   "host": "",
+   "synopsis": "辽宁省大学生程序设计竞赛暨ICPC国际大学生程序设计竞赛（辽宁省赛）",
+   "start": "2026-10-20 08:00:00",
+   "end": "2026-10-25 17:00:00",
+   "days_left": 3,
+   "attachments": 3,
+   "deadlines": [],
+   "detail": "详见附件",
+   "url": "https://cxcy.upln.cn/match/details?comId=687e1ada3286707973a54df04ebc65ea"
+  },
+  {
    "id": "2c3a7bc1cf3fe5a2d6034c2235a8a67a",
    "name": "辽宁省大学生医学创新大赛",
    "host": "",
@@ -482,19 +495,6 @@
    "url": "https://cxcy.upln.cn/match/details?comId=55592a234672f35bd251b530ea90e5c4"
   },
   {
-   "id": "687e1ada3286707973a54df04ebc65ea",
-   "name": "辽宁省大学生程序设计竞赛暨ICPC国际大学生程序设计竞赛（辽宁省赛）",
-   "host": "",
-   "synopsis": "辽宁省大学生程序设计竞赛暨ICPC国际大学生程序设计竞赛（辽宁省赛）",
-   "start": "2026-10-20 08:00:00",
-   "end": "2026-10-25 17:00:00",
-   "days_left": 4,
-   "attachments": 3,
-   "deadlines": [],
-   "detail": "详见附件",
-   "url": "https://cxcy.upln.cn/match/details?comId=687e1ada3286707973a54df04ebc65ea"
-  },
-  {
    "id": "0c9dec2f08a2800e7bb50d5d7221af0b",
    "name": "辽宁省大学生金相技能大赛",
    "host": "",
@@ -514,7 +514,7 @@
    "synopsis": "为深入贯彻党的二十届四中全会精神，认真落实国务院《教育强国建设规划纲要（2024—2035年）》及《中共中央关于制定国民经济和社会发展第十五个五年规划的建议》等政策要求。在新质生产力驱动下，紧扣产业数字化转型、战略性新兴产业集群发展战略部署，聚焦大数据、云计算、智能化及智能体技术在财务领域的深度融合与创新应用，引领院校财会专业深化产教融合协同育人改革，系统构建数智化财务人才培养体系。",
    "start": "2026-08-31 00:00:00",
    "end": "2026-10-29 17:00:00",
-   "days_left": 8,
+   "days_left": 7,
    "attachments": 1,
    "deadlines": [
     {
