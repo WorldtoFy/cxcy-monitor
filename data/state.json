@@ -1285,12 +1285,12 @@
   },
   "0c9dec2f08a2800e7bb50d5d7221af0b": {
    "attachments": 0,
-   "days_left": 5,
+   "days_left": 4,
    "deadlines": [],
    "detail_hash": "477e0ebcfea8d5bc",
    "end": "2026-10-28 23:59:59",
    "first_seen": "2026-10-20T20:00:14",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:14",
    "name": "辽宁省大学生金相技能大赛",
    "reminded": [
     "7"
@@ -1302,7 +1302,7 @@
   },
   "113e0d9718edb5fa68a63ed226f41407": {
    "attachments": 3,
-   "days_left": 3,
+   "days_left": 2,
    "deadlines": [
     {
      "first_date": "2026-10-31",
@@ -1317,7 +1317,7 @@
    "end": "2026-10-26 23:59:59",
    "first_seen": "2026-10-09T21:38:44",
    "host": "",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:14",
    "name": "辽宁省大学生金蝶云管理创新杯大赛",
    "reminded": [
     "1",
@@ -1423,7 +1423,7 @@
   },
   "2346a8d357d82df70f675325717b0648": {
    "attachments": 1,
-   "days_left": 38,
+   "days_left": 37,
    "deadlines": [
     {
      "first_date": "2026-08-20",
@@ -1434,7 +1434,7 @@
    "end": "2026-11-30 23:59:59",
    "first_seen": "2026-10-09T21:38:47",
    "host": "",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:17",
    "name": "辽宁省大学生建筑创新设计竞赛暨东北三省适老化建筑设计竞赛",
    "start": "2026-05-12 00:00:00",
    "synopsis": "辽宁省大学生建筑创新设计竞赛暨东北三省适老化建筑设计竞赛",
@@ -1443,7 +1443,7 @@
   },
   "2c3a7bc1cf3fe5a2d6034c2235a8a67a": {
    "attachments": 0,
-   "days_left": 2,
+   "days_left": 1,
    "deadlines": [
     {
      "first_date": "2026-12-31",
@@ -1453,9 +1453,10 @@
    "detail_hash": "0e0b626b8397842d",
    "end": "2026-10-25 23:59:59",
    "first_seen": "2026-10-17T02:00:13",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:11",
    "name": "辽宁省大学生医学创新大赛",
    "reminded": [
+    "1",
     "3",
     "7"
    ],
@@ -1525,7 +1526,7 @@
   },
   "3d172f1f4734fb5c06322d0c34c35eb1": {
    "attachments": 5,
-   "days_left": 9,
+   "days_left": 8,
    "deadlines": [
     {
      "first_date": "2026-05-01",
@@ -1536,7 +1537,7 @@
    "end": "2026-11-01 23:59:59",
    "first_seen": "2026-10-09T21:38:46",
    "host": "",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:17",
    "name": "辽宁省高校大学生中华经典诵写讲大赛",
    "start": "2026-04-28 00:00:00",
    "synopsis": "辽宁省高校大学生中华经典诵写讲大赛",
@@ -1595,7 +1596,7 @@
    "end": "2026-10-29 17:00:00",
    "first_seen": "2026-10-09T21:38:45",
    "host": "",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:14",
    "name": "“科云杯”全国大学生财会职业能力大赛（辽宁赛区）",
    "reminded": [
     "7"
@@ -1644,7 +1645,7 @@
   },
   "55592a234672f35bd251b530ea90e5c4": {
    "attachments": 4,
-   "days_left": 2,
+   "days_left": 1,
    "deadlines": [
     {
      "first_date": "2026-10-25",
@@ -1671,9 +1672,10 @@
    "end": "2026-10-25 23:59:59",
    "first_seen": "2026-10-09T21:38:45",
    "host": "",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:13",
    "name": "“外教社杯”全国高校学生跨文化能力大赛（辽宁赛区）",
    "reminded": [
+    "1",
     "3",
     "7"
    ],
@@ -1684,7 +1686,7 @@
   },
   "57a012b78e518bdd336ef944da580278": {
    "attachments": 5,
-   "days_left": 8,
+   "days_left": 7,
    "deadlines": [
     {
      "first_date": "2026-11-01",
@@ -1695,8 +1697,11 @@
    "end": "2026-10-31 23:59:59",
    "first_seen": "2026-10-09T21:38:45",
    "host": "",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:14",
    "name": "辽宁省大学生华为ICT大赛",
+   "reminded": [
+    "7"
+   ],
    "start": "2026-09-30 00:00:00",
    "synopsis": "辽宁省大学生华为ICT大赛",
    "url": "https://cxcy.upln.cn/match/details?comId=57a012b78e518bdd336ef944da580278",
@@ -1704,7 +1709,7 @@
   },
   "587ff3bdfa04cabc414033be2b8928e8": {
    "attachments": 3,
-   "days_left": 8,
+   "days_left": 7,
    "deadlines": [
     {
      "first_date": "2026-09-25",
@@ -1719,8 +1724,11 @@
    "end": "2026-10-31 23:59:59",
    "first_seen": "2026-10-09T21:38:46",
    "host": "",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:15",
    "name": "辽宁省大学生科普设计大赛",
+   "reminded": [
+    "7"
+   ],
    "start": "2026-09-25 00:00:00",
    "synopsis": "辽宁省大学生科普设计大赛",
    "url": "https://cxcy.upln.cn/match/details?comId=587ff3bdfa04cabc414033be2b8928e8",
@@ -1728,7 +1736,7 @@
   },
   "605db89c9122f3ae2b28210375b96ebd": {
    "attachments": 0,
-   "days_left": 8,
+   "days_left": 7,
    "deadlines": [
     {
      "first_date": "2026-08-31",
@@ -1743,8 +1751,11 @@
    "end": "2026-10-31 23:59:59",
    "first_seen": "2026-10-09T21:38:46",
    "host": "",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:17",
    "name": "辽宁省iCAN创新创业大赛",
+   "reminded": [
+    "7"
+   ],
    "start": "2026-09-01 00:00:00",
    "synopsis": "关于举办2026年辽宁省iCAN创新创业大赛暨第二十届iCAN大学生创新创业大赛辽宁赛区选拔赛的通知",
    "url": "https://cxcy.upln.cn/match/details?comId=605db89c9122f3ae2b28210375b96ebd",
@@ -1757,7 +1768,7 @@
    "detail_hash": "02fc2a840411c615",
    "end": "2026-10-25 17:00:00",
    "first_seen": "2026-10-20T08:00:07",
-   "last_seen": "2026-10-23T20:00:09",
+   "last_seen": "2026-10-24T02:00:11",
    "name": "辽宁省大学生程序设计竞赛暨ICPC国际大学生程序设计竞赛（辽宁省赛）",
    "reminded": [
     "1",
@@ -1771,7 +1782,7 @@
   },
   "6c7e7677d6c19007ef0b79de1c989745": {
    "attachments": 1,
-   "days_left": 13,
+   "days_left": 12,
    "deadlines": [
     {
      "first_date": "2026-09-25",
@@ -1793,7 +1804,7 @@
    "detail_hash": "41efee1215ed6cb0",
    "end": "2026-11-05 23:59:59",
    "first_seen": "2026-10-19T14:00:08",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:17",
    "name": "辽宁省大学生管理决策模拟大赛",
    "start": "2026-09-30 00:00:00",
    "synopsis": "辽宁省大学生管理决策模拟大赛",
@@ -1802,7 +1813,7 @@
   },
   "75813c0ecbdcab04332e846588d9ee43": {
    "attachments": 3,
-   "days_left": 14,
+   "days_left": 13,
    "deadlines": [
     {
      "first_date": "2026-10-18",
@@ -1817,7 +1828,7 @@
    "end": "2026-11-06 23:59:59",
    "first_seen": "2026-10-09T21:38:47",
    "host": "",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:17",
    "name": "全国本科院校纳税风险管控案例大赛辽宁省分区赛",
    "start": "2026-09-23 00:00:00",
    "synopsis": "全国本科院校纳税风险管控案例大赛辽宁省分区赛",
@@ -1826,12 +1837,12 @@
   },
   "7eb50f75710051c1dd9447dddf3bcede": {
    "attachments": 1,
-   "days_left": 2,
+   "days_left": 1,
    "deadlines": [],
    "detail_hash": "b3bd34c1698a0d74",
    "end": "2026-10-25 23:59:59",
    "first_seen": "2026-10-16T14:00:09",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:11",
    "name": "全国大学生广告艺术大赛（辽宁赛区）",
    "reminded": [
     "1",
@@ -1845,7 +1856,7 @@
   },
   "848403e0227b346410b3414a194796bf": {
    "attachments": 3,
-   "days_left": 7,
+   "days_left": 6,
    "deadlines": [
     {
      "first_date": "2026-10-30",
@@ -1855,7 +1866,7 @@
    "detail_hash": "88ce1336b1841522",
    "end": "2026-10-30 23:59:59",
    "first_seen": "2026-10-20T20:00:16",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:14",
    "name": "辽宁省大学生动漫与媒体创意设计大赛",
    "reminded": [
     "7"
@@ -1867,14 +1878,17 @@
   },
   "8b4d898c72e6dfcc1d2c056e547f5e0c": {
    "attachments": 1,
-   "days_left": 8,
+   "days_left": 7,
    "deadlines": [],
    "detail_hash": "c6c93d7c7bb9c5c7",
    "end": "2026-10-31 23:59:59",
    "first_seen": "2026-10-09T21:38:46",
    "host": "",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:17",
    "name": "辽宁省大学生商科综合能力大赛",
+   "reminded": [
+    "7"
+   ],
    "start": "2026-09-19 00:00:00",
    "synopsis": "第五届辽宁省大学生商科综合能力大赛",
    "url": "https://cxcy.upln.cn/match/details?comId=8b4d898c72e6dfcc1d2c056e547f5e0c",
@@ -2113,7 +2127,7 @@
   },
   "fb3efa0e7677b943d2a537683937dc8e": {
    "attachments": 2,
-   "days_left": 7,
+   "days_left": 6,
    "deadlines": [
     {
      "first_date": "2026-10-30",
@@ -2135,7 +2149,7 @@
    "detail_hash": "74b0bce9a6e91230",
    "end": "2026-10-30 23:59:59",
    "first_seen": "2026-10-15T20:00:14",
-   "last_seen": "2026-10-23T20:00:10",
+   "last_seen": "2026-10-24T02:00:14",
    "name": "辽宁省大学生医药生物技术技能大赛",
    "reminded": [
     "7"
@@ -2172,14 +2186,6 @@
   }
  },
  "runs": [
-  {
-   "alerted": 0,
-   "at": "2026-10-13T14:00:08",
-   "awards": 0,
-   "new": 0,
-   "seed": false,
-   "total": 22
-  },
   {
    "alerted": 1,
    "at": "2026-10-13T20:00:22",
@@ -2491,6 +2497,14 @@
    "new": 0,
    "seed": false,
    "total": 19
+  },
+  {
+   "alerted": 4,
+   "at": "2026-10-24T02:00:18",
+   "awards": 0,
+   "new": 0,
+   "seed": false,
+   "total": 17
   }
  ],
  "version": 1
