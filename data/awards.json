@@ -1,7 +1,31 @@
 {
- "generated_at": "2026-10-23T14:00:19",
+ "generated_at": "2026-10-23T20:00:19",
  "count": 40,
  "awards": [
+  {
+   "id": "040c16e327724e5593890099dcdd6ee8",
+   "name": "中国高校智能机器人创意大赛（辽宁赛区）获奖公示",
+   "time": "2026-10-23 17:41:12",
+   "competitionId": "4f8a45b44030c6d65455c9ea4448d730",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=040c16e327724e5593890099dcdd6ee8",
+   "files": []
+  },
+  {
+   "id": "38e552e50afb45fba4095aa9b1196283",
+   "name": "第八届辽宁省大学生集成电路创新创业大赛获奖公示",
+   "time": "2026-10-23 16:05:02",
+   "competitionId": "2d83f46f170731c9c376a5e833abdbfe",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=38e552e50afb45fba4095aa9b1196283",
+   "files": []
+  },
+  {
+   "id": "084bd8abf7f94cdb84f1d91760834a1b",
+   "name": "辽宁省大学生化学实验创新设计竞赛获奖公示",
+   "time": "2026-10-23 15:19:28",
+   "competitionId": "be8ad94ccf9d8509d97e364c91939c3d",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=084bd8abf7f94cdb84f1d91760834a1b",
+   "files": []
+  },
   {
    "id": "b70a14f65e8e4d0786b852c6ab43fd34",
    "name": "辽宁省大学生数学建模竞赛获奖公示",
@@ -301,30 +325,6 @@
    "time": "2026-07-12 16:00:46",
    "competitionId": "79a079fd1a0eece3de333abe837a5a71",
    "page": "https://cxcy.upln.cn/competitionDetails?id=69f88f9526678f5f63a955a67f6054ec",
-   "files": []
-  },
-  {
-   "id": "83d053a2e970fdae2daaf43cf5e0083c",
-   "name": "辽宁省大学生智慧农业创新创业大赛获奖公示",
-   "time": "2026-07-09 10:50:50",
-   "competitionId": "7f65da558fbc3b133a74e274a9d641ae",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=83d053a2e970fdae2daaf43cf5e0083c",
-   "files": []
-  },
-  {
-   "id": "0594e0cbd1a2fea4dbdb77b5ccb69bcf",
-   "name": "中国机器人及人工智能大赛(辽宁赛区)获奖公示",
-   "time": "2026-07-06 15:02:22",
-   "competitionId": "cab32dcb6c60b03434bb3037e5ede753",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=0594e0cbd1a2fea4dbdb77b5ccb69bcf",
-   "files": []
-  },
-  {
-   "id": "b2b7d484e7ff1cef1356664501bdf85a",
-   "name": "获奖公示——“德泰·氢水杯”辽宁省大学生生态环保技术创新创业竞赛暨东北三省一区大学生生态环保作品竞赛",
-   "time": "2026-07-05 13:30:04",
-   "competitionId": "96a3edd133deb802b9df019a6c901b0a",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=b2b7d484e7ff1cef1356664501bdf85a",
    "files": []
   }
  ]
