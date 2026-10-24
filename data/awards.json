@@ -1,7 +1,15 @@
 {
- "generated_at": "2026-10-24T08:00:20",
+ "generated_at": "2026-10-24T14:00:15",
  "count": 40,
  "awards": [
+  {
+   "id": "f88af4d67e6849349453bdc4039cbafb",
+   "name": "辽宁省大学生金相技能大赛获奖公示",
+   "time": "2026-10-24 11:35:16",
+   "competitionId": "0c9dec2f08a2800e7bb50d5d7221af0b",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=f88af4d67e6849349453bdc4039cbafb",
+   "files": []
+  },
   {
    "id": "040c16e327724e5593890099dcdd6ee8",
    "name": "中国高校智能机器人创意大赛（辽宁赛区）获奖公示",
@@ -96,12 +104,7 @@
    "time": "2026-10-08 14:54:05",
    "competitionId": "74ccba29834594af95511fbb685d512b",
    "page": "https://cxcy.upln.cn/competitionDetails?id=2ac5362e32a0db9ec4cd88d874488ec9",
-   "files": [
-    {
-     "name": "附件1.pdf",
-     "size": 210318.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "ad807b4107db4e5dbba8c399a02d2e1c",
@@ -317,14 +320,6 @@
    "time": "2026-07-13 17:17:49",
    "competitionId": "ebb6dbb7b26660cd0f8b709434fc0a5c",
    "page": "https://cxcy.upln.cn/competitionDetails?id=f559c11b4dcfd1360cfc933e657370e2",
-   "files": []
-  },
-  {
-   "id": "69f88f9526678f5f63a955a67f6054ec",
-   "name": "2026年辽宁省移动应用大赛获奖名单公示",
-   "time": "2026-07-12 16:00:46",
-   "competitionId": "79a079fd1a0eece3de333abe837a5a71",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=69f88f9526678f5f63a955a67f6054ec",
    "files": []
   }
  ]
