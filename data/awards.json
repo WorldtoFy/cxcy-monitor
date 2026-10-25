@@ -1,7 +1,15 @@
 {
- "generated_at": "2026-10-25T14:00:18",
+ "generated_at": "2026-10-25T20:00:18",
  "count": 40,
  "awards": [
+  {
+   "id": "1e560a3d51c1402b9c6d295fa1023be3",
+   "name": "2026年辽宁省大学生动植物标本制作大赛获奖公示",
+   "time": "2026-10-25 19:21:51",
+   "competitionId": "a7392e21d97d747994f7c4f5d3180510",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=1e560a3d51c1402b9c6d295fa1023be3",
+   "files": []
+  },
   {
    "id": "f88af4d67e6849349453bdc4039cbafb",
    "name": "辽宁省大学生金相技能大赛获奖公示",
@@ -312,14 +320,6 @@
    "time": "2026-07-17 17:17:13",
    "competitionId": "11d3363d6305f4e8689fc8a4810609c3",
    "page": "https://cxcy.upln.cn/competitionDetails?id=df0ff04a33cf63a1159923c7fa59a252",
-   "files": []
-  },
-  {
-   "id": "f559c11b4dcfd1360cfc933e657370e2",
-   "name": "2026睿抗机器人开发者大赛辽宁赛区获奖公示",
-   "time": "2026-07-13 17:17:49",
-   "competitionId": "ebb6dbb7b26660cd0f8b709434fc0a5c",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=f559c11b4dcfd1360cfc933e657370e2",
    "files": []
   }
  ]
