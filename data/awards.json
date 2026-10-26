@@ -1,7 +1,23 @@
 {
- "generated_at": "2026-10-26T14:00:19",
+ "generated_at": "2026-10-26T20:00:55",
  "count": 40,
  "awards": [
+  {
+   "id": "9f6075fed7464516a8c5b530a93d03b5",
+   "name": "辽宁省大学生物理实验竞赛获奖公示",
+   "time": "2026-10-26 16:09:50",
+   "competitionId": "f6e4667a8e39ce037f41a91a5d3af8d3",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=9f6075fed7464516a8c5b530a93d03b5",
+   "files": []
+  },
+  {
+   "id": "9958ecc894314228b57b72e7a4dc98b4",
+   "name": "辽宁省大学生旅游服务创新大赛获奖公示",
+   "time": "2026-10-26 15:44:12",
+   "competitionId": "44527600772a993b109e6734b1121e3c",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=9958ecc894314228b57b72e7a4dc98b4",
+   "files": []
+  },
   {
    "id": "1e560a3d51c1402b9c6d295fa1023be3",
    "name": "2026年辽宁省大学生动植物标本制作大赛获奖公示",
@@ -304,22 +320,6 @@
    "time": "2026-07-20 13:19:17",
    "competitionId": "0bfefc8dae0db590fe0f5905d515fd40",
    "page": "https://cxcy.upln.cn/competitionDetails?id=d4531289149ec88abce48df5b49d7519",
-   "files": []
-  },
-  {
-   "id": "bd7be30e0b86c2ba26e9c082859b1bf1",
-   "name": "第七届辽宁省大学生产教融合创新创意项目大赛获奖公示",
-   "time": "2026-07-20 12:29:10",
-   "competitionId": "35cdecd2ecb92ad26f967d74984a646f",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=bd7be30e0b86c2ba26e9c082859b1bf1",
-   "files": []
-  },
-  {
-   "id": "df0ff04a33cf63a1159923c7fa59a252",
-   "name": "2026辽宁省大学生“创新杯”未来飞行器设计大赛获奖名单公示",
-   "time": "2026-07-17 17:17:13",
-   "competitionId": "11d3363d6305f4e8689fc8a4810609c3",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=df0ff04a33cf63a1159923c7fa59a252",
    "files": []
   }
  ]
