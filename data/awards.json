@@ -1,7 +1,15 @@
 {
- "generated_at": "2026-10-27T08:00:24",
+ "generated_at": "2026-10-27T14:00:20",
  "count": 40,
  "awards": [
+  {
+   "id": "636f0accaae34eedace96e2d17fc6639",
+   "name": "辽宁省大学生社会工作实务技能大赛获奖公示",
+   "time": "2026-10-27 08:29:04",
+   "competitionId": "06bae1e11308fdfff2c2b30e92d23131",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=636f0accaae34eedace96e2d17fc6639",
+   "files": []
+  },
   {
    "id": "9f6075fed7464516a8c5b530a93d03b5",
    "name": "辽宁省大学生物理实验竞赛获奖公示",
@@ -312,14 +320,6 @@
    "time": "2026-07-20 14:31:37",
    "competitionId": "0bef9ca354a462152a9b4f3cfda23c60",
    "page": "https://cxcy.upln.cn/competitionDetails?id=593b47755c7c8b6e63cf8369cb2b89e8",
-   "files": []
-  },
-  {
-   "id": "d4531289149ec88abce48df5b49d7519",
-   "name": "辽宁省大学生生命科学创新创业大赛暨全国大学生生命科学竞赛(辽宁赛区)获奖公示",
-   "time": "2026-07-20 13:19:17",
-   "competitionId": "0bfefc8dae0db590fe0f5905d515fd40",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=d4531289149ec88abce48df5b49d7519",
    "files": []
   }
  ]
