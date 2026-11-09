@@ -179,7 +179,12 @@ def handler(event, context):  # noqa: ANN001 - FC 的固定签名
         secs = (end_dt - datetime.now()).total_seconds()
         return -1 if secs < 0 else int(secs // 86400)
 
-    comps.sort(key=lambda c: days_left_of(c.get("endTime") or "") or 9999)
+    def _sort_key(c: dict) -> int:
+        d = days_left_of(c.get("endTime") or "")
+        # 不能用 `d or 9999`：0 表示"今天截止"，会被误判为 9999 排到最后
+        return 9999 if d is None else (9999 if d < 0 else d)
+
+    comps.sort(key=_sort_key)
 
     new_count = alerted = detail_ok = 0
     cap = int(os.environ.get("ALERT_CAP", "4"))
