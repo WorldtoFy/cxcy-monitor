@@ -81,6 +81,12 @@ def _is_ip(host: str) -> bool:
     return bool(re.fullmatch(r"[\d.]+", host or ""))
 
 
+# 平台 2026-11 起把每页条数上限收紧到 100（pageSize=200 返回
+# "页码须为 1～1000，每页条数须为 1～100"），超出会在第一个接口就失败，
+# 所以列表接口一律按 <=100 分页拉取。
+PAGE_SIZE = 100
+
+
 class Platform:
     """平台 API 客户端，带重试。"""
 
@@ -121,14 +127,23 @@ class Platform:
         return self._get_url(f"{BASE}/{path}", params)
 
     def ongoing(self, year: int | None = None) -> list[dict[str, Any]]:
-        """进行中的竞赛。pageSize 给大值可一次拉全，无需翻页。"""
-        params: dict[str, Any] = {
-            "code": "1", "column": "createTime", "order": "desc",
-            "pageNo": 1, "pageSize": 200,
-        }
-        if year:
-            params["year"] = str(year)
-        return self._get("queryOngoing", params).get("records") or []
+        """进行中的竞赛：按页拉全（平台限制每页最多 100 条）。"""
+        out: list[dict[str, Any]] = []
+        page = 1
+        while page <= 50:          # 防御异常响应导致死循环
+            params: dict[str, Any] = {
+                "code": "1", "column": "createTime", "order": "desc",
+                "pageNo": page, "pageSize": PAGE_SIZE,
+            }
+            if year:
+                params["year"] = str(year)
+            res = self._get("queryOngoing", params) or {}
+            batch = res.get("records") or []
+            out.extend(batch)
+            if not batch or len(out) >= int(res.get("total") or 0):
+                break
+            page += 1
+        return out
 
     def detail(self, com_id: str) -> dict[str, Any]:
         """单个竞赛完整详情（含 detail 正文 HTML 与 fileList 附件）。"""
@@ -142,7 +157,8 @@ class Platform:
 
         返回 (记录列表, 总数)。每条记录含 competitionId，可关联到具体竞赛。
         """
-        params: dict[str, Any] = {"type": 1, "pageNo": page, "pageSize": size}
+        params: dict[str, Any] = {"type": 1, "pageNo": page,
+                                  "pageSize": min(size, PAGE_SIZE)}
         if name:
             params["name"] = name
         r = self._get_url(f"{PORTAL}/portalList", params) or {}
