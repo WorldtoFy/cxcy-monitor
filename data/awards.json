@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-11-10T20:00:14",
+ "generated_at": "2026-11-11T02:00:17",
  "count": 40,
  "awards": [
+  {
+   "id": "693a2feda4ec4559be280c6b6e866cc3",
+   "name": "2026年辽宁省“中软国际-卓越杯”AI挑战赛获奖公示",
+   "time": "2026-11-10 22:21:10",
+   "competitionId": "fc995642fa15ec42aaf7dc839b8820a4",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=693a2feda4ec4559be280c6b6e866cc3",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 619544.0
+    }
+   ]
+  },
   {
    "id": "d1718478df8c4ccf958387f07c3344c1",
    "name": "辽宁省大学生智慧电力运行控制创新竞赛获奖公示",
@@ -155,12 +168,7 @@
    "time": "2026-11-04 08:58:29",
    "competitionId": "d2b57b6da7687ab8aede90450156bb7e",
    "page": "https://cxcy.upln.cn/competitionDetails?id=568486f6772f4e738e692a1a0648f945",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 611058.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "4424e8b4ef6c4590a7d8815756e01f51",
@@ -376,14 +384,6 @@
    "time": "2026-10-12 15:31:04",
    "competitionId": "d983b95e65ff5943c7ff6f442a741a49",
    "page": "https://cxcy.upln.cn/competitionDetails?id=fd7dacb4880a4915865842636e0c5df3",
-   "files": []
-  },
-  {
-   "id": "681ae21534f94fdfa0badcb218d1c63d",
-   "name": "中国大学生机械工程创新创意大赛-无损检测创新实践与应用赛（辽宁赛区）获奖公示",
-   "time": "2026-10-12 12:34:38",
-   "competitionId": "dc2790b93facdebcc3a040d62007e684",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=681ae21534f94fdfa0badcb218d1c63d",
    "files": []
   }
  ]
