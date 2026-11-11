@@ -1,7 +1,70 @@
 {
- "generated_at": "2026-11-11T14:00:24",
+ "generated_at": "2026-11-11T20:00:21",
  "count": 40,
  "awards": [
+  {
+   "id": "26b045f3ecc84509d559b7e0e6fae7f7",
+   "name": "2026年辽宁省大学生工程实践与创新能力大赛暨2027年第十届中国大学生工程实践与创新能力大赛选拔赛获奖名单",
+   "time": "2026-11-11 18:00:00",
+   "competitionId": "a4e9b87af8a49d5b6866ddc7f214ecdd",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=26b045f3ecc84509d559b7e0e6fae7f7",
+   "files": [
+    {
+     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛太阳能电动车赛项获奖名单.pdf",
+     "size": 141260.0
+    },
+    {
+     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛智能分拣赛项成绩获奖名单.pdf",
+     "size": 112875.0
+    },
+    {
+     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛工程场景数字化赛项获奖名单.pdf",
+     "size": 136029.0
+    },
+    {
+     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛智能救援赛项获奖名单.pdf",
+     "size": 117060.0
+    },
+    {
+     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛生物质能电动车赛项获奖名单.pdf",
+     "size": 128139.0
+    },
+    {
+     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛智能搬运赛项获奖名单.pdf",
+     "size": 126740.0
+    },
+    {
+     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛企业运营仿真赛项获奖名单.pdf",
+     "size": 149234.0
+    }
+   ]
+  },
+  {
+   "id": "a7eff96ce14643239bd2c2bbc379ae80",
+   "name": "第七届辽宁省大学生农业经济建模大赛获奖公示",
+   "time": "2026-11-11 16:37:48",
+   "competitionId": "4912c9285ef4974c337cb34fe9069d21",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=a7eff96ce14643239bd2c2bbc379ae80",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 665620.0
+    }
+   ]
+  },
+  {
+   "id": "6b2b8659a74947d3b2acfa832db40cc0",
+   "name": "关于公布第十三届辽宁省大学生创新年会获奖项目名单的通知",
+   "time": "2026-11-11 16:05:53",
+   "competitionId": "898076f07ee460e58bf5ca494d14de26",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=6b2b8659a74947d3b2acfa832db40cc0",
+   "files": [
+    {
+     "name": "关于公布第十三届辽宁省大学生创新年会获奖项目名单的通知.pdf",
+     "size": 2369524.0
+    }
+   ]
+  },
   {
    "id": "6076926d3aa34a059761507a1c5a7388",
    "name": "第五届辽宁省大学生“瑰宝传承”戏曲文化创新创意大赛获奖公示",
@@ -125,16 +188,7 @@
    "time": "2026-11-05 10:00:00",
    "competitionId": "3d172f1f4734fb5c06322d0c34c35eb1",
    "page": "https://cxcy.upln.cn/competitionDetails?id=2d0c2f158061e624267bc69adb7bf175",
-   "files": [
-    {
-     "name": "2026年辽宁省高校中外大学生中华经典诵写讲大赛-“诗教中国”诗词讲解大赛获奖名单.xlsx",
-     "size": 25029.0
-    },
-    {
-     "name": "2026年辽宁省高校中外大学生中华经典诵写讲大赛-“诵读中国”经典诵读大赛获奖名单.xlsx",
-     "size": 16853.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "b9b4f4b6bfe74598974f6783f03fdadb",
@@ -142,12 +196,7 @@
    "time": "2026-11-05 09:15:51",
    "competitionId": "e60cce6f84d2d8df1a415e9e91c06163",
    "page": "https://cxcy.upln.cn/competitionDetails?id=b9b4f4b6bfe74598974f6783f03fdadb",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 354318.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "8c0d1583dd6147af86def40b41efb728",
@@ -155,12 +204,7 @@
    "time": "2026-11-05 08:29:37",
    "competitionId": "113e0d9718edb5fa68a63ed226f41407",
    "page": "https://cxcy.upln.cn/competitionDetails?id=8c0d1583dd6147af86def40b41efb728",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 150759.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "bb996479ff2541e780dba5d705d17027",
@@ -360,30 +404,6 @@
    "time": "2026-10-17 14:00:23",
    "competitionId": "f7f1ef3ac0541adafa6e6d3a9fdaa832",
    "page": "https://cxcy.upln.cn/competitionDetails?id=681133f8dd2b3c40e34e54ec69e80402",
-   "files": []
-  },
-  {
-   "id": "2871d10f189d42cba0849d360d7024e6",
-   "name": "辽宁省大学生机械创新设计大赛获奖公示",
-   "time": "2026-10-15 09:59:06",
-   "competitionId": "9c67dda35d48a387b35108bd5720e42b",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=2871d10f189d42cba0849d360d7024e6",
-   "files": []
-  },
-  {
-   "id": "14e847a574944d358e6fe7e4cd6be109",
-   "name": "“学创杯”全国大学生创业综合模拟大赛（辽宁赛区）获奖公示",
-   "time": "2026-10-14 11:49:03",
-   "competitionId": "367d8e8fae87f31b1bdde2193203c1d1",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=14e847a574944d358e6fe7e4cd6be109",
-   "files": []
-  },
-  {
-   "id": "c4d3a8460f5b41c0bd6b5be8a7d3ae78",
-   "name": "辽宁省大学生化工设计创新创业竞赛获奖公示",
-   "time": "2026-10-13 18:20:47",
-   "competitionId": "46f628071ace580ed0895e9939db2436",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=c4d3a8460f5b41c0bd6b5be8a7d3ae78",
    "files": []
   }
  ]
