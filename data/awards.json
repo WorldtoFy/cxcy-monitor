@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-11-11T08:00:16",
+ "generated_at": "2026-11-11T14:00:24",
  "count": 40,
  "awards": [
+  {
+   "id": "6076926d3aa34a059761507a1c5a7388",
+   "name": "第五届辽宁省大学生“瑰宝传承”戏曲文化创新创意大赛获奖公示",
+   "time": "2026-11-11 09:06:41",
+   "competitionId": "69dfc59e7d55dcbf7083bcbbed7fc9fb",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=6076926d3aa34a059761507a1c5a7388",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 765657.0
+    }
+   ]
+  },
   {
    "id": "693a2feda4ec4559be280c6b6e866cc3",
    "name": "2026年辽宁省“中软国际-卓越杯”AI挑战赛获奖公示",
@@ -155,12 +168,7 @@
    "time": "2026-11-04 16:42:19",
    "competitionId": "5c858a80cdf1eae3070b60590cee5947",
    "page": "https://cxcy.upln.cn/competitionDetails?id=bb996479ff2541e780dba5d705d17027",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 738175.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "568486f6772f4e738e692a1a0648f945",
@@ -376,14 +384,6 @@
    "time": "2026-10-13 18:20:47",
    "competitionId": "46f628071ace580ed0895e9939db2436",
    "page": "https://cxcy.upln.cn/competitionDetails?id=c4d3a8460f5b41c0bd6b5be8a7d3ae78",
-   "files": []
-  },
-  {
-   "id": "fd7dacb4880a4915865842636e0c5df3",
-   "name": "“枫叶优体”杯辽宁省大学生中华优秀传统文化创新设计大赛获奖公示",
-   "time": "2026-10-12 15:31:04",
-   "competitionId": "d983b95e65ff5943c7ff6f442a741a49",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=fd7dacb4880a4915865842636e0c5df3",
    "files": []
   }
  ]
