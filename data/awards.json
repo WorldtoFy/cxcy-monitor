@@ -1,7 +1,33 @@
 {
- "generated_at": "2026-11-13T14:00:23",
+ "generated_at": "2026-11-13T20:00:25",
  "count": 40,
  "awards": [
+  {
+   "id": "53daca5377404de3985d83082e6e8a11",
+   "name": "第七届辽宁省高校经济决策虚仿实验大赛获奖公示",
+   "time": "2026-11-13 19:12:35",
+   "competitionId": "bf828c9505b39d518917714c0c6044f2",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=53daca5377404de3985d83082e6e8a11",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 313585.0
+    }
+   ]
+  },
+  {
+   "id": "50f08dd56e0541a8a69822bd95116367",
+   "name": "辽宁省高校大学生中华经典诵写讲大赛获奖公示",
+   "time": "2026-11-13 14:28:04",
+   "competitionId": "3d172f1f4734fb5c06322d0c34c35eb1",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=50f08dd56e0541a8a69822bd95116367",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 488019.0
+    }
+   ]
+  },
   {
    "id": "26b045f3ecc84509d559b7e0e6fae7f7",
    "name": "2026年辽宁省大学生工程实践与创新能力大赛暨2027年第十届中国大学生工程实践与创新能力大赛选拔赛获奖名单",
@@ -162,12 +188,7 @@
    "time": "2026-11-05 20:25:04",
    "competitionId": "b81c23bea2a6a6570c7fb7888785aaec",
    "page": "https://cxcy.upln.cn/competitionDetails?id=c01e6bfe001c4f2ead0c0af11eb40209",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 640009.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "995a3a0ffcfd4319b60c65ac4d3b956c",
@@ -175,12 +196,7 @@
    "time": "2026-11-05 16:13:06",
    "competitionId": "79a079fd1a0eece3de333abe837a5a71",
    "page": "https://cxcy.upln.cn/competitionDetails?id=995a3a0ffcfd4319b60c65ac4d3b956c",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 443455.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "2d0c2f158061e624267bc69adb7bf175",
@@ -388,22 +404,6 @@
    "time": "2026-10-19 11:49:43",
    "competitionId": "0bef9ca354a462152a9b4f3cfda23c60",
    "page": "https://cxcy.upln.cn/competitionDetails?id=b70a14f65e8e4d0786b852c6ab43fd34",
-   "files": []
-  },
-  {
-   "id": "b9d81f1552b44b0c98a868e836b8ce80",
-   "name": "辽宁省大学生BIM应用技能大赛获奖公示",
-   "time": "2026-10-19 11:38:21",
-   "competitionId": "021f243a5292d2bdd9cef31f2ba915a3",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=b9d81f1552b44b0c98a868e836b8ce80",
-   "files": []
-  },
-  {
-   "id": "681133f8dd2b3c40e34e54ec69e80402",
-   "name": "2026年辽宁省大学生智慧电力运行控制创新竞赛获奖名单（个人赛道）获奖公示",
-   "time": "2026-10-17 14:00:23",
-   "competitionId": "f7f1ef3ac0541adafa6e6d3a9fdaa832",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=681133f8dd2b3c40e34e54ec69e80402",
    "files": []
   }
  ]
