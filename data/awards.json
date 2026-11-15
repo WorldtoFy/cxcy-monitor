@@ -1,7 +1,24 @@
 {
- "generated_at": "2026-11-15T08:00:21",
+ "generated_at": "2026-11-15T14:00:22",
  "count": 40,
  "awards": [
+  {
+   "id": "04a92a961aeed316dada57df18a56e93",
+   "name": "2026年辽宁省大学生工程实践与创新能力大赛暨2027年第十届中国大学生工程实践与创新能力大赛选拔赛飞行器设计仿真及智能网联汽车赛项获奖名单",
+   "time": "2026-11-15 11:00:00",
+   "competitionId": "a4e9b87af8a49d5b6866ddc7f214ecdd",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=04a92a961aeed316dada57df18a56e93",
+   "files": [
+    {
+     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛智能网联汽车设计赛项获奖名单.pdf",
+     "size": 76763.0
+    },
+    {
+     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛飞行器设计仿真赛项获奖名单.pdf",
+     "size": 106130.0
+    }
+   ]
+  },
   {
    "id": "53daca5377404de3985d83082e6e8a11",
    "name": "第七届辽宁省高校经济决策虚仿实验大赛获奖公示",
@@ -175,12 +192,7 @@
    "time": "2026-11-06 08:45:56",
    "competitionId": "46aefabedb24b2b03f9832d7d56bbf9b",
    "page": "https://cxcy.upln.cn/competitionDetails?id=dbbb9f09b577404f9a1c4dfcf06a72be",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 414968.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "c01e6bfe001c4f2ead0c0af11eb40209",
@@ -396,14 +408,6 @@
    "time": "2026-10-23 15:19:28",
    "competitionId": "be8ad94ccf9d8509d97e364c91939c3d",
    "page": "https://cxcy.upln.cn/competitionDetails?id=084bd8abf7f94cdb84f1d91760834a1b",
-   "files": []
-  },
-  {
-   "id": "b70a14f65e8e4d0786b852c6ab43fd34",
-   "name": "辽宁省大学生数学建模竞赛获奖公示",
-   "time": "2026-10-19 11:49:43",
-   "competitionId": "0bef9ca354a462152a9b4f3cfda23c60",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=b70a14f65e8e4d0786b852c6ab43fd34",
    "files": []
   }
  ]
