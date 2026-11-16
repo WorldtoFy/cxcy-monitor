@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-11-16T08:00:21",
+ "generated_at": "2026-11-16T14:00:20",
  "count": 40,
  "awards": [
+  {
+   "id": "3168c4cc8c9b2c04a4e27a8db6352501",
+   "name": "2026年辽宁省大学生管理决策模拟大赛-人力资源管理综合能力竞赛获奖公示",
+   "time": "2026-11-16 09:47:21",
+   "competitionId": "6c7e7677d6c19007ef0b79de1c989745",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=3168c4cc8c9b2c04a4e27a8db6352501",
+   "files": [
+    {
+     "name": "2026 年辽宁省大学生管理决策模拟大赛-人力资源管理综合能力竞赛获奖公示.pdf",
+     "size": 234402.0
+    }
+   ]
+  },
   {
    "id": "04a92a961aeed316dada57df18a56e93",
    "name": "2026年辽宁省大学生工程实践与创新能力大赛暨2027年第十届中国大学生工程实践与创新能力大赛选拔赛飞行器设计仿真及智能网联汽车赛项获奖名单",
@@ -179,12 +192,7 @@
    "time": "2026-11-06 17:27:58",
    "competitionId": "717e9922685dd4db334087ef8c9bc1d3",
    "page": "https://cxcy.upln.cn/competitionDetails?id=706110334a484f64868d2c042b40e773",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 251515.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "dbbb9f09b577404f9a1c4dfcf06a72be",
@@ -400,14 +408,6 @@
    "time": "2026-10-23 16:05:02",
    "competitionId": "2d83f46f170731c9c376a5e833abdbfe",
    "page": "https://cxcy.upln.cn/competitionDetails?id=38e552e50afb45fba4095aa9b1196283",
-   "files": []
-  },
-  {
-   "id": "084bd8abf7f94cdb84f1d91760834a1b",
-   "name": "辽宁省大学生化学实验创新设计竞赛获奖公示",
-   "time": "2026-10-23 15:19:28",
-   "competitionId": "be8ad94ccf9d8509d97e364c91939c3d",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=084bd8abf7f94cdb84f1d91760834a1b",
    "files": []
   }
  ]
