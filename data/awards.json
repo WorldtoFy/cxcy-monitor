@@ -1,7 +1,33 @@
 {
- "generated_at": "2026-11-16T14:00:20",
+ "generated_at": "2026-11-16T20:00:25",
  "count": 40,
  "awards": [
+  {
+   "id": "5ffde21a237c41438ea24dcd36b3477c",
+   "name": "辽宁省大学生材料焊接与铸造工艺设计大赛获奖公示",
+   "time": "2026-11-16 18:46:22",
+   "competitionId": "1c464bc76540517541a4cf7fa923cbe2",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=5ffde21a237c41438ea24dcd36b3477c",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 503507.0
+    }
+   ]
+  },
+  {
+   "id": "c23a85eb70194cebb498a83367e5c427",
+   "name": "全国本科院校纳税风险管控案例大赛辽宁省分区赛获奖公示",
+   "time": "2026-11-16 15:23:05",
+   "competitionId": "75813c0ecbdcab04332e846588d9ee43",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=c23a85eb70194cebb498a83367e5c427",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 123660.0
+    }
+   ]
+  },
   {
    "id": "3168c4cc8c9b2c04a4e27a8db6352501",
    "name": "2026年辽宁省大学生管理决策模拟大赛-人力资源管理综合能力竞赛获奖公示",
@@ -166,12 +192,7 @@
    "time": "2026-11-09 12:41:02",
    "competitionId": "a1ede456da1517785dcbe737e749f61d",
    "page": "https://cxcy.upln.cn/competitionDetails?id=d8820fda5bb740b18f272268684f9f6e",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 978403.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "21b77730ba2b478b9b106bbab87b251a",
@@ -179,12 +200,7 @@
    "time": "2026-11-09 10:08:12",
    "competitionId": "e555f8f8e053e28819bc53f031f08b64",
    "page": "https://cxcy.upln.cn/competitionDetails?id=21b77730ba2b478b9b106bbab87b251a",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 816678.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "706110334a484f64868d2c042b40e773",
@@ -392,22 +408,6 @@
    "time": "2026-10-24 11:35:16",
    "competitionId": "0c9dec2f08a2800e7bb50d5d7221af0b",
    "page": "https://cxcy.upln.cn/competitionDetails?id=f88af4d67e6849349453bdc4039cbafb",
-   "files": []
-  },
-  {
-   "id": "040c16e327724e5593890099dcdd6ee8",
-   "name": "中国高校智能机器人创意大赛（辽宁赛区）获奖公示",
-   "time": "2026-10-23 17:41:12",
-   "competitionId": "4f8a45b44030c6d65455c9ea4448d730",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=040c16e327724e5593890099dcdd6ee8",
-   "files": []
-  },
-  {
-   "id": "38e552e50afb45fba4095aa9b1196283",
-   "name": "第八届辽宁省大学生集成电路创新创业大赛获奖公示",
-   "time": "2026-10-23 16:05:02",
-   "competitionId": "2d83f46f170731c9c376a5e833abdbfe",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=38e552e50afb45fba4095aa9b1196283",
    "files": []
   }
  ]
