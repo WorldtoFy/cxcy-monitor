@@ -1,7 +1,33 @@
 {
- "generated_at": "2026-11-17T14:00:16",
+ "generated_at": "2026-11-17T20:00:21",
  "count": 40,
  "awards": [
+  {
+   "id": "9eebfe0023fa4c5ebd18e3a7db2b8646",
+   "name": "辽宁省大学生应急救援创新设计大赛获奖公示",
+   "time": "2026-11-17 18:17:57",
+   "competitionId": "fe035af8994957c194c6ab667e2607cc",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=9eebfe0023fa4c5ebd18e3a7db2b8646",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 712574.0
+    }
+   ]
+  },
+  {
+   "id": "96dd179d154dfeac83baf2ed59a956c6",
+   "name": "第九届“外教社杯”全国高校学生跨文化能力大赛（辽宁赛区）团队现场赛获奖名单公示",
+   "time": "2026-11-17 17:01:35",
+   "competitionId": "55592a234672f35bd251b530ea90e5c4",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=96dd179d154dfeac83baf2ed59a956c6",
+   "files": [
+    {
+     "name": "第九届“外教社杯”跨文化能力大赛团队现场赛获奖名单.pdf",
+     "size": 326416.0
+    }
+   ]
+  },
   {
    "id": "39c0effdbc1b49149a1cbd6820b787c4",
    "name": "辽宁省大学生大数据应用与分析大赛获奖公示",
@@ -93,7 +119,7 @@
    "files": [
     {
      "name": "项目获奖公示.pdf",
-     "size": 488019.0
+     "size": 487994.0
     }
    ]
   },
@@ -166,12 +192,7 @@
    "time": "2026-11-11 09:06:41",
    "competitionId": "69dfc59e7d55dcbf7083bcbbed7fc9fb",
    "page": "https://cxcy.upln.cn/competitionDetails?id=6076926d3aa34a059761507a1c5a7388",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 765657.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "693a2feda4ec4559be280c6b6e866cc3",
@@ -179,12 +200,7 @@
    "time": "2026-11-10 22:21:10",
    "competitionId": "fc995642fa15ec42aaf7dc839b8820a4",
    "page": "https://cxcy.upln.cn/competitionDetails?id=693a2feda4ec4559be280c6b6e866cc3",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 619544.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "d1718478df8c4ccf958387f07c3344c1",
@@ -392,22 +408,6 @@
    "time": "2026-10-26 16:09:50",
    "competitionId": "f6e4667a8e39ce037f41a91a5d3af8d3",
    "page": "https://cxcy.upln.cn/competitionDetails?id=9f6075fed7464516a8c5b530a93d03b5",
-   "files": []
-  },
-  {
-   "id": "9958ecc894314228b57b72e7a4dc98b4",
-   "name": "辽宁省大学生旅游服务创新大赛获奖公示",
-   "time": "2026-10-26 15:44:12",
-   "competitionId": "44527600772a993b109e6734b1121e3c",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=9958ecc894314228b57b72e7a4dc98b4",
-   "files": []
-  },
-  {
-   "id": "1e560a3d51c1402b9c6d295fa1023be3",
-   "name": "2026年辽宁省大学生动植物标本制作大赛获奖公示",
-   "time": "2026-10-25 19:21:51",
-   "competitionId": "a7392e21d97d747994f7c4f5d3180510",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=1e560a3d51c1402b9c6d295fa1023be3",
    "files": []
   }
  ]
