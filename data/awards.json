@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-11-17T02:00:18",
+ "generated_at": "2026-11-17T14:00:16",
  "count": 40,
  "awards": [
+  {
+   "id": "39c0effdbc1b49149a1cbd6820b787c4",
+   "name": "辽宁省大学生大数据应用与分析大赛获奖公示",
+   "time": "2026-11-17 08:10:36",
+   "competitionId": "8f0d635117e4e0a2ea010810f7fee78d",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=39c0effdbc1b49149a1cbd6820b787c4",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 771486.0
+    }
+   ]
+  },
   {
    "id": "5ffde21a237c41438ea24dcd36b3477c",
    "name": "辽宁省大学生材料焊接与铸造工艺设计大赛获奖公示",
@@ -179,12 +192,7 @@
    "time": "2026-11-10 06:34:34",
    "competitionId": "f7f1ef3ac0541adafa6e6d3a9fdaa832",
    "page": "https://cxcy.upln.cn/competitionDetails?id=d1718478df8c4ccf958387f07c3344c1",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 373022.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "d8820fda5bb740b18f272268684f9f6e",
@@ -400,14 +408,6 @@
    "time": "2026-10-25 19:21:51",
    "competitionId": "a7392e21d97d747994f7c4f5d3180510",
    "page": "https://cxcy.upln.cn/competitionDetails?id=1e560a3d51c1402b9c6d295fa1023be3",
-   "files": []
-  },
-  {
-   "id": "f88af4d67e6849349453bdc4039cbafb",
-   "name": "辽宁省大学生金相技能大赛(实验技能赛道、综合分析赛道、创新应用赛道）获奖公示",
-   "time": "2026-10-24 11:35:16",
-   "competitionId": "0c9dec2f08a2800e7bb50d5d7221af0b",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=f88af4d67e6849349453bdc4039cbafb",
    "files": []
   }
  ]
