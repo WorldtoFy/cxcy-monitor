@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-11-18T08:00:24",
+ "generated_at": "2026-11-18T14:00:22",
  "count": 40,
  "awards": [
+  {
+   "id": "32191b5718794732a3f0d67c23e8488d",
+   "name": "辽宁省大学生医药生物技术技能大赛获奖公示",
+   "time": "2026-11-18 09:51:29",
+   "competitionId": "fb3efa0e7677b943d2a537683937dc8e",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=32191b5718794732a3f0d67c23e8488d",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 342569.0
+    }
+   ]
+  },
   {
    "id": "9eebfe0023fa4c5ebd18e3a7db2b8646",
    "name": "辽宁省大学生应急救援创新设计大赛获奖公示",
@@ -179,12 +192,7 @@
    "time": "2026-11-11 16:05:53",
    "competitionId": "898076f07ee460e58bf5ca494d14de26",
    "page": "https://cxcy.upln.cn/competitionDetails?id=6b2b8659a74947d3b2acfa832db40cc0",
-   "files": [
-    {
-     "name": "关于公布第十三届辽宁省大学生创新年会获奖项目名单的通知.pdf",
-     "size": 2369524.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "6076926d3aa34a059761507a1c5a7388",
@@ -400,14 +408,6 @@
    "time": "2026-10-27 08:29:04",
    "competitionId": "06bae1e11308fdfff2c2b30e92d23131",
    "page": "https://cxcy.upln.cn/competitionDetails?id=636f0accaae34eedace96e2d17fc6639",
-   "files": []
-  },
-  {
-   "id": "9f6075fed7464516a8c5b530a93d03b5",
-   "name": "辽宁省大学生物理实验竞赛获奖公示",
-   "time": "2026-10-26 16:09:50",
-   "competitionId": "f6e4667a8e39ce037f41a91a5d3af8d3",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=9f6075fed7464516a8c5b530a93d03b5",
    "files": []
   }
  ]
