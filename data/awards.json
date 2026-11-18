@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-11-18T20:00:21",
+ "generated_at": "2026-11-19T02:00:25",
  "count": 40,
  "awards": [
+  {
+   "id": "5cb1bacb93b64f408124ce49347cae50",
+   "name": "2026年辽宁省大学生工程实践与创新能力大赛获奖公示",
+   "time": "2026-11-18 20:57:09",
+   "competitionId": "a4e9b87af8a49d5b6866ddc7f214ecdd",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=5cb1bacb93b64f408124ce49347cae50",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 548490.0
+    }
+   ]
+  },
   {
    "id": "32191b5718794732a3f0d67c23e8488d",
    "name": "辽宁省大学生医药生物技术技能大赛获奖公示",
@@ -179,12 +192,7 @@
    "time": "2026-11-11 16:37:48",
    "competitionId": "4912c9285ef4974c337cb34fe9069d21",
    "page": "https://cxcy.upln.cn/competitionDetails?id=a7eff96ce14643239bd2c2bbc379ae80",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 665620.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "6b2b8659a74947d3b2acfa832db40cc0",
@@ -400,14 +408,6 @@
    "time": "2026-10-28 09:56:05",
    "competitionId": "f83cd98de87201185e7a15e966f5b00e",
    "page": "https://cxcy.upln.cn/competitionDetails?id=9c63e17f3fa74a9e90a1bff4ab6f3c71",
-   "files": []
-  },
-  {
-   "id": "636f0accaae34eedace96e2d17fc6639",
-   "name": "辽宁省大学生社会工作实务技能大赛获奖公示",
-   "time": "2026-10-27 08:29:04",
-   "competitionId": "06bae1e11308fdfff2c2b30e92d23131",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=636f0accaae34eedace96e2d17fc6639",
    "files": []
   }
  ]
