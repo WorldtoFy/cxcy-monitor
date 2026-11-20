@@ -1,7 +1,46 @@
 {
- "generated_at": "2026-11-20T14:00:18",
+ "generated_at": "2026-11-20T20:00:23",
  "count": 40,
  "awards": [
+  {
+   "id": "8f150aa72036ddcdda8bb16107648b98",
+   "name": "关于2026年辽宁省大学生医药大健康创新创业大赛获奖名单的公示",
+   "time": "2026-11-20 16:00:00",
+   "competitionId": "4ca0e560a3dc9c5d1b0c3cb8337f6ba0",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=8f150aa72036ddcdda8bb16107648b98",
+   "files": [
+    {
+     "name": "2026年辽宁省大学生医药大健康创新创业大赛获奖公示.pdf",
+     "size": 809496.0
+    }
+   ]
+  },
+  {
+   "id": "7eeda8751b170b7130146765ed7e5199",
+   "name": "2026年第七届辽宁省大学生三维数字化创新设计大赛获奖名单公示（数字化设计与制造专项赛）",
+   "time": "2026-11-20 15:21:52",
+   "competitionId": "74ccba29834594af95511fbb685d512b",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=7eeda8751b170b7130146765ed7e5199",
+   "files": [
+    {
+     "name": "附件1.pdf",
+     "size": 162173.0
+    }
+   ]
+  },
+  {
+   "id": "7495df7700825772a040d94c16e41f75",
+   "name": "2026年第七届辽宁省大学生三维数字化创新设计大赛获奖名单公示（低空无人机设计仿真与竞技大赛）",
+   "time": "2026-11-20 15:09:23",
+   "competitionId": "74ccba29834594af95511fbb685d512b",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=7495df7700825772a040d94c16e41f75",
+   "files": [
+    {
+     "name": "附件1.pdf",
+     "size": 195014.0
+    }
+   ]
+  },
   {
    "id": "5cb1bacb93b64f408124ce49347cae50",
    "name": "2026年辽宁省大学生工程实践与创新能力大赛获奖公示",
@@ -129,12 +168,7 @@
    "time": "2026-11-13 19:12:35",
    "competitionId": "bf828c9505b39d518917714c0c6044f2",
    "page": "https://cxcy.upln.cn/competitionDetails?id=53daca5377404de3985d83082e6e8a11",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 313585.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "50f08dd56e0541a8a69822bd95116367",
@@ -142,12 +176,7 @@
    "time": "2026-11-13 14:28:04",
    "competitionId": "3d172f1f4734fb5c06322d0c34c35eb1",
    "page": "https://cxcy.upln.cn/competitionDetails?id=50f08dd56e0541a8a69822bd95116367",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 487994.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "26b045f3ecc84509d559b7e0e6fae7f7",
@@ -155,36 +184,7 @@
    "time": "2026-11-11 18:00:00",
    "competitionId": "a4e9b87af8a49d5b6866ddc7f214ecdd",
    "page": "https://cxcy.upln.cn/competitionDetails?id=26b045f3ecc84509d559b7e0e6fae7f7",
-   "files": [
-    {
-     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛太阳能电动车赛项获奖名单.pdf",
-     "size": 141260.0
-    },
-    {
-     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛智能分拣赛项成绩获奖名单.pdf",
-     "size": 112875.0
-    },
-    {
-     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛工程场景数字化赛项获奖名单.pdf",
-     "size": 136029.0
-    },
-    {
-     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛智能救援赛项获奖名单.pdf",
-     "size": 117060.0
-    },
-    {
-     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛生物质能电动车赛项获奖名单.pdf",
-     "size": 128139.0
-    },
-    {
-     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛智能搬运赛项获奖名单.pdf",
-     "size": 126740.0
-    },
-    {
-     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛企业运营仿真赛项获奖名单.pdf",
-     "size": 149234.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "a7eff96ce14643239bd2c2bbc379ae80",
@@ -384,30 +384,6 @@
    "time": "2026-10-30 15:37:59",
    "competitionId": "ffdc7a52b9bce4b0a3ed57def371851b",
    "page": "https://cxcy.upln.cn/competitionDetails?id=01ccf8676a2e470d93cfcd84ff431b94",
-   "files": []
-  },
-  {
-   "id": "2635f8ec883a3222d94b8544c2d53e4d",
-   "name": "关于公布2026年第七届辽宁高校经济决策虚仿实验大赛预赛成绩和晋级决赛队伍的通知",
-   "time": "2026-10-29 11:16:18",
-   "competitionId": "bf828c9505b39d518917714c0c6044f2",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=2635f8ec883a3222d94b8544c2d53e4d",
-   "files": []
-  },
-  {
-   "id": "2c858094d9f546bf854de00ede109eeb",
-   "name": "辽宁省大学生文化创意设计大赛获奖公示",
-   "time": "2026-10-28 16:47:08",
-   "competitionId": "112e39e45e7b28251be5509acc2586d2",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=2c858094d9f546bf854de00ede109eeb",
-   "files": []
-  },
-  {
-   "id": "9c63e17f3fa74a9e90a1bff4ab6f3c71",
-   "name": "辽宁省大学生“iTeach”数字化教育应用创新大赛获奖公示",
-   "time": "2026-10-28 09:56:05",
-   "competitionId": "f83cd98de87201185e7a15e966f5b00e",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=9c63e17f3fa74a9e90a1bff4ab6f3c71",
    "files": []
   }
  ]
