@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-11-23T14:00:16",
+ "generated_at": "2026-11-23T20:00:17",
  "count": 40,
  "awards": [
+  {
+   "id": "2b64c5162cd2404783c373a68c2dc8f4",
+   "name": "2026年辽宁省大学生医学创新大赛获奖公示",
+   "time": "2026-11-23 19:49:32",
+   "competitionId": "2c3a7bc1cf3fe5a2d6034c2235a8a67a",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=2b64c5162cd2404783c373a68c2dc8f4",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 582324.0
+    }
+   ]
+  },
   {
    "id": "8f150aa72036ddcdda8bb16107648b98",
    "name": "关于2026年辽宁省大学生医药大健康创新创业大赛获奖名单的公示",
@@ -76,7 +89,7 @@
    "files": [
     {
      "name": "项目获奖公示.pdf",
-     "size": 712574.0
+     "size": 711606.0
     }
    ]
   },
@@ -151,16 +164,7 @@
    "time": "2026-11-15 11:00:00",
    "competitionId": "a4e9b87af8a49d5b6866ddc7f214ecdd",
    "page": "https://cxcy.upln.cn/competitionDetails?id=04a92a961aeed316dada57df18a56e93",
-   "files": [
-    {
-     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛智能网联汽车设计赛项获奖名单.pdf",
-     "size": 76763.0
-    },
-    {
-     "name": "2026年辽宁省大学生工程实践与创新能力大赛暨国赛选拔赛飞行器设计仿真赛项获奖名单.pdf",
-     "size": 106130.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "53daca5377404de3985d83082e6e8a11",
@@ -376,14 +380,6 @@
    "time": "2026-11-01 20:33:50",
    "competitionId": "e60cce6f84d2d8df1a415e9e91c06163",
    "page": "https://cxcy.upln.cn/competitionDetails?id=088c78500368257996f22fb26e54572e",
-   "files": []
-  },
-  {
-   "id": "01ccf8676a2e470d93cfcd84ff431b94",
-   "name": "辽宁省大学生“体育+”创新创业大赛获奖公示",
-   "time": "2026-10-30 15:37:59",
-   "competitionId": "ffdc7a52b9bce4b0a3ed57def371851b",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=01ccf8676a2e470d93cfcd84ff431b94",
    "files": []
   }
  ]
