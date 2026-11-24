@@ -1,7 +1,33 @@
 {
- "generated_at": "2026-11-24T14:00:23",
+ "generated_at": "2026-11-24T20:00:25",
  "count": 40,
  "awards": [
+  {
+   "id": "a72890deb202411a965088e3a6a628e6",
+   "name": "辽宁省大学生食品与健康创新大赛获奖公示",
+   "time": "2026-11-24 17:59:45",
+   "competitionId": "f1c708200a0c74bfb79145a45f3920bc",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=a72890deb202411a965088e3a6a628e6",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 681324.0
+    }
+   ]
+  },
+  {
+   "id": "4542751447e34dd7b354574eaddd7832",
+   "name": "辽宁省大学生虚拟现实与新媒体创新设计大赛获奖公示",
+   "time": "2026-11-24 14:34:06",
+   "competitionId": "90d98393ff774d768df3dc281b766d83",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=4542751447e34dd7b354574eaddd7832",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 944706.0
+    }
+   ]
+  },
   {
    "id": "f7ff52f28de74f518c314c059c0ff570",
    "name": "辽宁省大学生商科综合能力大赛获奖公示",
@@ -138,12 +164,7 @@
    "time": "2026-11-17 17:01:35",
    "competitionId": "55592a234672f35bd251b530ea90e5c4",
    "page": "https://cxcy.upln.cn/competitionDetails?id=96dd179d154dfeac83baf2ed59a956c6",
-   "files": [
-    {
-     "name": "第九届“外教社杯”跨文化能力大赛团队现场赛获奖名单.pdf",
-     "size": 326416.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "39c0effdbc1b49149a1cbd6820b787c4",
@@ -151,12 +172,7 @@
    "time": "2026-11-17 08:10:36",
    "competitionId": "8f0d635117e4e0a2ea010810f7fee78d",
    "page": "https://cxcy.upln.cn/competitionDetails?id=39c0effdbc1b49149a1cbd6820b787c4",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 771486.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "5ffde21a237c41438ea24dcd36b3477c",
@@ -364,22 +380,6 @@
    "time": "2026-11-02 17:01:11",
    "competitionId": "129f1c0119cf592554efc8cb7b7386d5",
    "page": "https://cxcy.upln.cn/competitionDetails?id=693041eb45134b44ac22c13bcb2760c4",
-   "files": []
-  },
-  {
-   "id": "c07593cd277a4f5b86f7f08472e21d13",
-   "name": "辽宁省高校师范生教学创新大赛获奖公示",
-   "time": "2026-11-02 14:43:57",
-   "competitionId": "b6c2489711124dd841a410b239b3556c",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=c07593cd277a4f5b86f7f08472e21d13",
-   "files": []
-  },
-  {
-   "id": "1002f41aadef4c3f9ddedc3e12a9377a",
-   "name": "辽宁省创新方法大赛获奖公示",
-   "time": "2026-11-02 13:49:11",
-   "competitionId": "10bb8a3eb141a9ae99b963097153f396",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=1002f41aadef4c3f9ddedc3e12a9377a",
    "files": []
   }
  ]
