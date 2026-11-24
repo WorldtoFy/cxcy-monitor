@@ -1,7 +1,46 @@
 {
- "generated_at": "2026-11-24T08:00:21",
+ "generated_at": "2026-11-24T14:00:23",
  "count": 40,
  "awards": [
+  {
+   "id": "f7ff52f28de74f518c314c059c0ff570",
+   "name": "辽宁省大学生商科综合能力大赛获奖公示",
+   "time": "2026-11-24 11:06:37",
+   "competitionId": "8b4d898c72e6dfcc1d2c056e547f5e0c",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=f7ff52f28de74f518c314c059c0ff570",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 361456.0
+    }
+   ]
+  },
+  {
+   "id": "8659dcec9009493b8ddfb745e9320274",
+   "name": "辽宁省大学生三维数字化创新设计大赛获奖公示",
+   "time": "2026-11-24 09:34:03",
+   "competitionId": "74ccba29834594af95511fbb685d512b",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=8659dcec9009493b8ddfb745e9320274",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 776924.0
+    }
+   ]
+  },
+  {
+   "id": "1282523a0ca044b09849b2ed742e15f9",
+   "name": "辽宁省两岸新锐设计竞赛“华灿奖”获奖公示",
+   "time": "2026-11-24 08:14:51",
+   "competitionId": "fa8ad98b07c786f3fdccaa4fc7c9a7e1",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=1282523a0ca044b09849b2ed742e15f9",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 789718.0
+    }
+   ]
+  },
   {
    "id": "2b64c5162cd2404783c373a68c2dc8f4",
    "name": "2026年辽宁省大学生医学创新大赛获奖公示",
@@ -125,12 +164,7 @@
    "time": "2026-11-16 18:46:22",
    "competitionId": "1c464bc76540517541a4cf7fa923cbe2",
    "page": "https://cxcy.upln.cn/competitionDetails?id=5ffde21a237c41438ea24dcd36b3477c",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 503507.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "c23a85eb70194cebb498a83367e5c427",
@@ -138,12 +172,7 @@
    "time": "2026-11-16 15:23:05",
    "competitionId": "75813c0ecbdcab04332e846588d9ee43",
    "page": "https://cxcy.upln.cn/competitionDetails?id=c23a85eb70194cebb498a83367e5c427",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 123660.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "3168c4cc8c9b2c04a4e27a8db6352501",
@@ -151,12 +180,7 @@
    "time": "2026-11-16 09:47:21",
    "competitionId": "6c7e7677d6c19007ef0b79de1c989745",
    "page": "https://cxcy.upln.cn/competitionDetails?id=3168c4cc8c9b2c04a4e27a8db6352501",
-   "files": [
-    {
-     "name": "2026 年辽宁省大学生管理决策模拟大赛-人力资源管理综合能力竞赛获奖公示.pdf",
-     "size": 234402.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "04a92a961aeed316dada57df18a56e93",
@@ -356,30 +380,6 @@
    "time": "2026-11-02 13:49:11",
    "competitionId": "10bb8a3eb141a9ae99b963097153f396",
    "page": "https://cxcy.upln.cn/competitionDetails?id=1002f41aadef4c3f9ddedc3e12a9377a",
-   "files": []
-  },
-  {
-   "id": "199973fce8bdd49bc55710e795f747d4",
-   "name": "辽宁省第九届“外教社杯”跨文化能力大赛短视频赛道获奖名单公示",
-   "time": "2026-11-02 10:42:24",
-   "competitionId": "55592a234672f35bd251b530ea90e5c4",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=199973fce8bdd49bc55710e795f747d4",
-   "files": []
-  },
-  {
-   "id": "fd20e79732c11a061507f07de09d45e6",
-   "name": "2026年企业云开发者大赛决赛成绩公示",
-   "time": "2026-11-02 08:35:34",
-   "competitionId": "46aefabedb24b2b03f9832d7d56bbf9b",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=fd20e79732c11a061507f07de09d45e6",
-   "files": []
-  },
-  {
-   "id": "088c78500368257996f22fb26e54572e",
-   "name": "关于公布 2026年第一届辽宁省大学生数智财经大数据分析与应用大赛获奖情况的通知",
-   "time": "2026-11-01 20:33:50",
-   "competitionId": "e60cce6f84d2d8df1a415e9e91c06163",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=088c78500368257996f22fb26e54572e",
    "files": []
   }
  ]
