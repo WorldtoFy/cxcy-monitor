@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-11-24T20:00:25",
+ "generated_at": "2026-11-25T02:00:21",
  "count": 40,
  "awards": [
+  {
+   "id": "5fe938eba3a74ecc8e88d3188f2fed83",
+   "name": "2026辽宁省大学生国潮文化设计应用比赛获奖公示",
+   "time": "2026-11-25 00:49:07",
+   "competitionId": "2d4419f7ae779a6616030ef1a9ed1e68",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=5fe938eba3a74ecc8e88d3188f2fed83",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 635247.0
+    }
+   ]
+  },
   {
    "id": "a72890deb202411a965088e3a6a628e6",
    "name": "辽宁省大学生食品与健康创新大赛获奖公示",
@@ -151,12 +164,7 @@
    "time": "2026-11-17 18:17:57",
    "competitionId": "fe035af8994957c194c6ab667e2607cc",
    "page": "https://cxcy.upln.cn/competitionDetails?id=9eebfe0023fa4c5ebd18e3a7db2b8646",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 711606.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "96dd179d154dfeac83baf2ed59a956c6",
@@ -372,14 +380,6 @@
    "time": "2026-11-02 17:38:49",
    "competitionId": "f7f1ef3ac0541adafa6e6d3a9fdaa832",
    "page": "https://cxcy.upln.cn/competitionDetails?id=a9a92f49ab9765bd3a921484ba5dfd82",
-   "files": []
-  },
-  {
-   "id": "693041eb45134b44ac22c13bcb2760c4",
-   "name": "辽宁高校商业精英挑战赛（品牌策划竞赛、文旅与会展创新创业实践竞赛、国际贸易竞赛等）获奖公示",
-   "time": "2026-11-02 17:01:11",
-   "competitionId": "129f1c0119cf592554efc8cb7b7386d5",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=693041eb45134b44ac22c13bcb2760c4",
    "files": []
   }
  ]
