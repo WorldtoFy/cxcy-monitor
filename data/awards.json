@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-11-25T08:00:19",
+ "generated_at": "2026-11-25T14:00:18",
  "count": 40,
  "awards": [
+  {
+   "id": "59f9edceead20189c3c56d137a0d6f5a",
+   "name": "2026年辽宁省大学生科普设计大赛（“医志园”中医药科普手绘赛道）获奖公示",
+   "time": "2026-11-25 10:38:05",
+   "competitionId": "587ff3bdfa04cabc414033be2b8928e8",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=59f9edceead20189c3c56d137a0d6f5a",
+   "files": [
+    {
+     "name": "2026年辽宁省大学生科普设计大赛（“医志园”中医药科普手绘赛道）获奖公示.pdf",
+     "size": 464810.0
+    }
+   ]
+  },
   {
    "id": "5fe938eba3a74ecc8e88d3188f2fed83",
    "name": "2026辽宁省大学生国潮文化设计应用比赛获奖公示",
@@ -151,12 +164,7 @@
    "time": "2026-11-18 09:51:29",
    "competitionId": "fb3efa0e7677b943d2a537683937dc8e",
    "page": "https://cxcy.upln.cn/competitionDetails?id=32191b5718794732a3f0d67c23e8488d",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 342569.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "9eebfe0023fa4c5ebd18e3a7db2b8646",
@@ -372,14 +380,6 @@
    "time": "2026-11-03 14:17:52",
    "competitionId": "96a3edd133deb802b9df019a6c901b0a",
    "page": "https://cxcy.upln.cn/competitionDetails?id=4424e8b4ef6c4590a7d8815756e01f51",
-   "files": []
-  },
-  {
-   "id": "a9a92f49ab9765bd3a921484ba5dfd82",
-   "name": "2026年辽宁省大学生智慧电力运行控制创新竞赛（数智电力创新赛道）获奖名单公示",
-   "time": "2026-11-02 17:38:49",
-   "competitionId": "f7f1ef3ac0541adafa6e6d3a9fdaa832",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=a9a92f49ab9765bd3a921484ba5dfd82",
    "files": []
   }
  ]
