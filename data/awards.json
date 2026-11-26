@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-11-26T14:00:19",
+ "generated_at": "2026-11-26T20:00:17",
  "count": 40,
  "awards": [
+  {
+   "id": "6bbbc72283f34959a71da4b1087e8692",
+   "name": "辽宁省大学生数字贸易创新创业大赛获奖公示",
+   "time": "2026-11-26 19:58:36",
+   "competitionId": "1eccc2d790c8df9094470e7f5595e1ea",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=6bbbc72283f34959a71da4b1087e8692",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 484052.0
+    }
+   ]
+  },
   {
    "id": "59f9edceead20189c3c56d137a0d6f5a",
    "name": "2026年辽宁省大学生科普设计大赛（“医志园”中医药科普手绘赛道）获奖公示",
@@ -151,12 +164,7 @@
    "time": "2026-11-18 20:57:09",
    "competitionId": "a4e9b87af8a49d5b6866ddc7f214ecdd",
    "page": "https://cxcy.upln.cn/competitionDetails?id=5cb1bacb93b64f408124ce49347cae50",
-   "files": [
-    {
-     "name": "项目获奖公示.pdf",
-     "size": 548490.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "32191b5718794732a3f0d67c23e8488d",
@@ -372,14 +380,6 @@
    "time": "2026-11-04 08:58:29",
    "competitionId": "d2b57b6da7687ab8aede90450156bb7e",
    "page": "https://cxcy.upln.cn/competitionDetails?id=568486f6772f4e738e692a1a0648f945",
-   "files": []
-  },
-  {
-   "id": "4424e8b4ef6c4590a7d8815756e01f51",
-   "name": "“德泰·氢水杯”辽宁省大学生生态环保技术创新创业竞赛暨东北三省一区大学生生态环保作品竞赛获奖公示",
-   "time": "2026-11-03 14:17:52",
-   "competitionId": "96a3edd133deb802b9df019a6c901b0a",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=4424e8b4ef6c4590a7d8815756e01f51",
    "files": []
   }
  ]
