@@ -1,7 +1,24 @@
 {
- "generated_at": "2026-11-28T08:00:20",
+ "generated_at": "2026-11-28T14:00:16",
  "count": 40,
  "awards": [
+  {
+   "id": "3d98436a828f2c7fa79ec368fb633c83",
+   "name": "2026年辽宁省管理决策模拟大赛大学生领导力潜质提升赛道获奖公示",
+   "time": "2026-11-28 10:13:24",
+   "competitionId": "6c7e7677d6c19007ef0b79de1c989745",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=3d98436a828f2c7fa79ec368fb633c83",
+   "files": [
+    {
+     "name": "2026年辽宁省管理决策模拟大赛大学生领导力潜质提升赛道本科生团队获奖名单.pdf",
+     "size": 285388.0
+    },
+    {
+     "name": "2026年辽宁省管理决策模拟大赛大学生领导力潜质提升赛道研究生团队获奖名单.pdf",
+     "size": 185525.0
+    }
+   ]
+  },
   {
    "id": "6a2fa3f4bff34fe9ad9a654a12e7a4bf",
    "name": "第九届辽宁省大学生主持人大赛获奖公示",
@@ -151,12 +168,7 @@
    "time": "2026-11-20 15:21:52",
    "competitionId": "74ccba29834594af95511fbb685d512b",
    "page": "https://cxcy.upln.cn/competitionDetails?id=7eeda8751b170b7130146765ed7e5199",
-   "files": [
-    {
-     "name": "附件1.pdf",
-     "size": 162173.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "7495df7700825772a040d94c16e41f75",
@@ -372,14 +384,6 @@
    "time": "2026-11-05 08:29:37",
    "competitionId": "113e0d9718edb5fa68a63ed226f41407",
    "page": "https://cxcy.upln.cn/competitionDetails?id=8c0d1583dd6147af86def40b41efb728",
-   "files": []
-  },
-  {
-   "id": "bb996479ff2541e780dba5d705d17027",
-   "name": "辽宁省大学生市场调查与分析大赛暨全国大学生市场调查与分析大赛(辽宁赛区)获奖公示",
-   "time": "2026-11-04 16:42:19",
-   "competitionId": "5c858a80cdf1eae3070b60590cee5947",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=bb996479ff2541e780dba5d705d17027",
    "files": []
   }
  ]
