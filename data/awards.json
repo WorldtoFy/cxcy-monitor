@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-11-28T14:00:16",
+ "generated_at": "2026-11-29T02:00:17",
  "count": 40,
  "awards": [
+  {
+   "id": "6e9bab334ef94af0aefef27e3f5e050f",
+   "name": "辽宁省大学生动漫与媒体创意设计大赛获奖公示",
+   "time": "2026-11-28 17:11:09",
+   "competitionId": "848403e0227b346410b3414a194796bf",
+   "page": "https://cxcy.upln.cn/competitionDetails?id=6e9bab334ef94af0aefef27e3f5e050f",
+   "files": [
+    {
+     "name": "项目获奖公示.pdf",
+     "size": 1448309.0
+    }
+   ]
+  },
   {
    "id": "3d98436a828f2c7fa79ec368fb633c83",
    "name": "2026年辽宁省管理决策模拟大赛大学生领导力潜质提升赛道获奖公示",
@@ -10,12 +23,12 @@
    "page": "https://cxcy.upln.cn/competitionDetails?id=3d98436a828f2c7fa79ec368fb633c83",
    "files": [
     {
-     "name": "2026年辽宁省管理决策模拟大赛大学生领导力潜质提升赛道本科生团队获奖名单.pdf",
-     "size": 285388.0
-    },
-    {
      "name": "2026年辽宁省管理决策模拟大赛大学生领导力潜质提升赛道研究生团队获奖名单.pdf",
      "size": 185525.0
+    },
+    {
+     "name": "2026年辽宁省管理决策模拟大赛大学生领导力潜质提升赛道本科生团队获奖名单.pdf",
+     "size": 286370.0
     }
    ]
   },
@@ -155,12 +168,7 @@
    "time": "2026-11-20 16:00:00",
    "competitionId": "4ca0e560a3dc9c5d1b0c3cb8337f6ba0",
    "page": "https://cxcy.upln.cn/competitionDetails?id=8f150aa72036ddcdda8bb16107648b98",
-   "files": [
-    {
-     "name": "2026年辽宁省大学生医药大健康创新创业大赛获奖公示.pdf",
-     "size": 809496.0
-    }
-   ]
+   "files": []
   },
   {
    "id": "7eeda8751b170b7130146765ed7e5199",
@@ -376,14 +384,6 @@
    "time": "2026-11-05 09:15:51",
    "competitionId": "e60cce6f84d2d8df1a415e9e91c06163",
    "page": "https://cxcy.upln.cn/competitionDetails?id=b9b4f4b6bfe74598974f6783f03fdadb",
-   "files": []
-  },
-  {
-   "id": "8c0d1583dd6147af86def40b41efb728",
-   "name": "辽宁省大学生金蝶云管理创新杯大赛获奖公示",
-   "time": "2026-11-05 08:29:37",
-   "competitionId": "113e0d9718edb5fa68a63ed226f41407",
-   "page": "https://cxcy.upln.cn/competitionDetails?id=8c0d1583dd6147af86def40b41efb728",
    "files": []
   }
  ]
